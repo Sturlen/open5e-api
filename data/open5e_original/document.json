@@ -8,6 +8,8 @@
         "organization": "Open5e",
         "version": "1.0",
         "copyright": "Open5e.com Copyright 2019.",
-        "url": "open5e.com"
+        "url": "https://open5e.com",
+        "license_url": "https://open5e.com/legal"
+        
     }
 ]
