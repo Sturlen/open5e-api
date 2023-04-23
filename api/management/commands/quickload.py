@@ -1,22 +1,18 @@
 """Helper command to load all data sources."""
 
 import subprocess
+from os import listdir, path, getcwd
+from pathlib import Path
 
 from django.core.management import call_command
 from django.core.management.base import BaseCommand
 
+data_folder_path = "./data/"
+
+SOURCES = listdir(data_folder_path)
+
 # SOURCE_DIRS contains every data directory full of JSON to import.
-SOURCE_DIRS = [
-    './data/open5e_original/',
-    './data/WOTC_5e_SRD_v5.1/',
-    './data/tome_of_beasts/',
-    './data/creature_codex/',
-    './data/tome_of_beasts_2/',
-    './data/deep_magic/',
-    './data/menagerie/',
-    './data/tome_of_beasts_3/',
-    './data/a5e_srd/'
-]
+SOURCE_DIRS = [ path.join(data_folder_path,data_dir)  for data_dir in SOURCES ]
 
 class Command(BaseCommand):
     """Implementation for the `manage.py quickload` subcommand."""
