@@ -646,7 +646,12 @@ class Importer:
 
         result = self._determine_import_result(new, exists)
         if result is not ImportResult.SKIPPED:
-            i.save()
+            try:
+                i.save()
+            except Exception:
+                print(f"Spell Import failed for spell {spell_json['name']}")
+                
+
         return result
 
     def import_spell_list(self, spell_list_json, import_spec) -> ImportResult:
