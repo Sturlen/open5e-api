@@ -143,6 +143,9 @@ class Spell(GameContent):
             # Unlimited (same-plane) is recorded as 99990
             # Unlimited (multi-plane) is recorded as 99999
 
+            # Default
+            self.target_range_sort = 0
+
             if 'self' in range_trimmed:
                 # Various spells in deep magic include effect shape.
                 self.target_range_sort = 0
