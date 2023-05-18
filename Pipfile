@@ -21,6 +21,8 @@ whitenoise = "*"
 whoosh = "*"
 pyyaml = "*"
 uritemplate = "*"
+djantic = "*"
+pydantic = "*"
 
 [dev-packages]
 
