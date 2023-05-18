@@ -193,10 +193,16 @@ class Command(BaseCommand):
                     schema_dict = schema.dict()
                     schema_dict.pop("subraces")
                     schema_dict.pop("subtypes")
-                    pprint.pprint(schema_dict)
 
                     race = models.Race.objects.create(
                         **schema_dict, document=document)
+
+                    for subtype_data in subtypes:
+                        print(subtype_data)
+                        subrace_schema = SubraceSchema.parse_obj(subtype_data)
+                        subrace_dict = subrace_schema.dict()
+                        race.subraces.create(
+                            **subrace_dict, document=document)
         except FileNotFoundError:
             pass
 
