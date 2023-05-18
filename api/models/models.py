@@ -4,6 +4,7 @@ import uuid
 from django.db import models
 from djantic import ModelSchema
 from datetime import datetime
+from django.template.defaultfilters import slugify
 
 
 class Manifest(models.Model):
@@ -98,6 +99,11 @@ class GameContent(models.Model):
 
     def document__url(self):
         return self.document.url
+
+    def save(self, *args, **kwargs):
+
+        self.slug = slugify(self.name)
+        super(GameContent, self).save(*args, **kwargs)
 
     class Meta:
         abstract = True
