@@ -18,13 +18,31 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
+import pprint
 
 import django.apps
 from django.core.management.base import BaseCommand, CommandError
 from django.db import transaction
+from djantic import ModelSchema
 
 from api.management.commands.importer import Importer, ImportOptions, ImportSpec
 from api import models
+
+exclude = ["archetype_set", "background_set", "armor_set", "charclass_set", "condition_set",
+           "feat_set", "magicitem_set", "monster_set", "plane_set", "race_set", "section_set", "spell_set", "spelllist_set", "subrace_set", "weapon_set", "created_at"]
+
+
+class ConditionSchema(ModelSchema):
+    class Config:
+        model = models.Condition
+        exclude = ["archetype_set", "background_set", "armor_set", "charclass_set", "condition_set",
+                   "feat_set", "magicitem_set", "monster_set", "plane_set", "race_set", "section_set", "spell_set", "spelllist_set", "subrace_set", "weapon_set", "created_at", "document"]
+
+
+class DocumentSchema(ModelSchema):
+    class Config:
+        model = models.Document
+        exclude = exclude
 
 
 def _get_md5_hash(filepath: Path) -> str:
@@ -82,7 +100,8 @@ class Command(BaseCommand):
         """Main logic for the command."""
         directories = options["directories"]
         if options["flush"]:
-            self.stdout.write(self.style.WARNING("Flushing existing database."))
+            self.stdout.write(self.style.WARNING(
+                "Flushing existing database."))
             flush_db()
         elif options["update"] and not options["append"]:
             self.stdout.write(
@@ -91,7 +110,8 @@ class Command(BaseCommand):
                 )
             )
         elif options["testrun"]:
-            self.stdout.write(self.style.WARNING("NO CHANGES WILL BE COMMITTED."))
+            self.stdout.write(self.style.WARNING(
+                "NO CHANGES WILL BE COMMITTED."))
         elif options["append"] and not options["update"]:
             self.stdout.write(
                 self.style.WARNING(
@@ -104,12 +124,42 @@ class Command(BaseCommand):
         self.options = options
 
         for directory in options["directories"]:
-            self._populate_from_directory(Path(directory))
+            self._import_from_directory(Path(directory))
+
+    @transaction.atomic
+    def _import_from_directory(self, directory: Path):
+        filepath = directory / "document.json"
+
+        try:
+            with open(filepath, encoding="utf-8") as json_file:
+                json_data = json.load(json_file)[0]
+
+                schema = DocumentSchema.parse_obj(json_data)
+                pprint.pprint(schema.dict())
+
+                document = models.Document.objects.create(**schema.dict())
+
+        except Exception as e:
+            raise e
+        try:
+            with open(directory / "conditions.json", encoding="utf-8") as json_file:
+
+                json_data_list = json.load(json_file)
+
+                for json_data in json_data_list:
+                    schema = ConditionSchema.parse_obj(json_data)
+                    pprint.pprint(schema.dict())
+
+                    condition = models.Condition.objects.create(
+                        **schema.dict(), document=document)
+        except FileNotFoundError:
+            pass
 
     @transaction.atomic
     def _populate_from_directory(self, directory: Path) -> None:
         """Import models from all the .json files in a single directory."""
-        self.stdout.write(self.style.SUCCESS(f"Reading in files from {directory}"))
+        self.stdout.write(self.style.SUCCESS(
+            f"Reading in files from {directory}"))
 
         import_options = ImportOptions(
             update=self.options["update"],
@@ -133,7 +183,8 @@ class Command(BaseCommand):
                 "classes.json",
                 models.CharClass,
                 importer.import_class,
-                sub_spec=ImportSpec(None, models.Archetype, importer.import_archetype),
+                sub_spec=ImportSpec(None, models.Archetype,
+                                    importer.import_archetype),
             ),
             ImportSpec(
                 "conditions.json",
@@ -147,15 +198,19 @@ class Command(BaseCommand):
                 importer.import_magic_item,
             ),
             ImportSpec("spells.json", models.Spell, importer.import_spell),
-            ImportSpec("spelllist.json", models.SpellList, importer.import_spell_list),
-            ImportSpec("monsters.json", models.Monster, importer.import_monster),
+            ImportSpec("spelllist.json", models.SpellList,
+                       importer.import_spell_list),
+            ImportSpec("monsters.json", models.Monster,
+                       importer.import_monster),
             ImportSpec("planes.json", models.Plane, importer.import_plane),
-            ImportSpec("sections.json", models.Section, importer.import_section),
+            ImportSpec("sections.json", models.Section,
+                       importer.import_section),
             ImportSpec(
                 "races.json",
                 models.Race,
                 importer.import_race,
-                sub_spec=ImportSpec(None, models.Subrace, importer.import_subrace),
+                sub_spec=ImportSpec(None, models.Subrace,
+                                    importer.import_subrace),
             ),
             ImportSpec("weapons.json", models.Weapon, importer.import_weapon),
             ImportSpec("armor.json", models.Armor, importer.import_armor),
@@ -172,6 +227,7 @@ class Command(BaseCommand):
                 json_data = json.load(json_file)
             report = importer.import_models_from_json(import_spec, json_data)
             self.stdout.write(self.style.SUCCESS(report))
+
 
 def flush_db() -> None:
     """Delete all models existing in the database."""

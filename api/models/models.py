@@ -2,6 +2,8 @@ import json
 import uuid
 
 from django.db import models
+from djantic import ModelSchema
+from datetime import datetime
 
 
 class Manifest(models.Model):
@@ -12,7 +14,7 @@ class Manifest(models.Model):
     Periodically, they check back in to see whether any manifests have changed.
     If so, then they know to re-download that source.
     """
-    
+
     filename = models.CharField(
         max_length=255,
         unique=True,
@@ -332,7 +334,8 @@ class Armor(GameContent):
     plus_dex_mod = models.BooleanField(default=False)
     plus_con_mod = models.BooleanField(default=False)
     plus_wis_mod = models.BooleanField(default=False)
-    plus_flat_mod = models.IntegerField(default=False)  # Build a shield this way.
+    # Build a shield this way.
+    plus_flat_mod = models.IntegerField(default=False)
     plus_max = models.IntegerField(default=0)
 
     def ac_string(self):
