@@ -19,6 +19,7 @@ import hashlib
 import json
 from pathlib import Path
 import pprint
+from typing import List
 
 import django.apps
 from django.core.management.base import BaseCommand, CommandError
@@ -29,19 +30,32 @@ from api.management.commands.importer import Importer, ImportOptions, ImportSpec
 from api import models
 
 exclude = ["archetype_set", "background_set", "armor_set", "charclass_set", "condition_set",
-           "feat_set", "magicitem_set", "monster_set", "plane_set", "race_set", "section_set", "spell_set", "spelllist_set", "subrace_set", "weapon_set", "created_at"]
+           "feat_set", "magicitem_set", "monster_set", "plane_set", "race_set", "section_set", "spell_set", "spelllist_set", "subrace_set", "weapon_set", "created_at", "document"]
 
 
 class ConditionSchema(ModelSchema):
     class Config:
         model = models.Condition
-        exclude = ["archetype_set", "background_set", "armor_set", "charclass_set", "condition_set",
-                   "feat_set", "magicitem_set", "monster_set", "plane_set", "race_set", "section_set", "spell_set", "spelllist_set", "subrace_set", "weapon_set", "created_at", "document"]
+        exclude = exclude
 
 
 class DocumentSchema(ModelSchema):
     class Config:
         model = models.Document
+        exclude = exclude
+
+
+class SubraceSchema(ModelSchema):
+    class Config:
+        model = models.Subrace
+        exclude = exclude
+
+
+class RaceSchema(ModelSchema):
+    subtypes: List[SubraceSchema]
+
+    class Config:
+        model = models.Race
         exclude = exclude
 
 
@@ -148,10 +162,41 @@ class Command(BaseCommand):
 
                 for json_data in json_data_list:
                     schema = ConditionSchema.parse_obj(json_data)
-                    pprint.pprint(schema.dict())
 
-                    condition = models.Condition.objects.create(
+                    race = models.Condition.objects.create(
                         **schema.dict(), document=document)
+        except FileNotFoundError:
+            pass
+        try:
+            with open(directory / "races.json", encoding="utf-8") as json_file:
+                transformed_json_file = json_file.read().replace('"asi-desc"',
+                                                                 '"asi_desc"').replace('"speed-desc"',
+                                                                                       '"speed_desc"').replace('"asi"', '"asi_json"').replace('"speed"', '"speed_json"')
+                print(transformed_json_file)
+                json_data_list = json.loads(transformed_json_file)
+
+                for json_data in json_data_list:
+                    print("**NAME: ", json_data["name"])
+                    json_data["asi_json"] = json.dumps(json_data["asi_json"])
+                    json_data["speed_json"] = json.dumps(
+                        json_data["speed_json"])
+                    subtypes = json_data.get("subtypes", [])
+
+                    for subtype_data in subtypes:
+                        subtype_data["asi_json"] = json.dumps(
+                            subtype_data["asi_json"])
+
+                    json_data["subtypes"] = subtypes
+
+                    schema = RaceSchema.parse_obj(json_data)
+
+                    schema_dict = schema.dict()
+                    schema_dict.pop("subraces")
+                    schema_dict.pop("subtypes")
+                    pprint.pprint(schema_dict)
+
+                    race = models.Race.objects.create(
+                        **schema_dict, document=document)
         except FileNotFoundError:
             pass
 
