@@ -12,7 +12,7 @@ class Manifest(models.Model):
     Periodically, they check back in to see whether any manifests have changed.
     If so, then they know to re-download that source.
     """
-    
+
     filename = models.CharField(
         max_length=255,
         unique=True,
@@ -286,6 +286,10 @@ class Background(GameContent):
 class MagicItem(GameContent):
     type = models.TextField(
         help_text='Description of the item type, such as "Armor (light)".')
+    components = models.TextField(
+        help_text="Text description of crafting components, if the item can be crafted.", null=True)
+    requirements = models.TextField(
+        help_text="Text description of requirements to use the item.", null=True)
     rarity = models.TextField(
         help_text='Description of the rarity, such as "rare".')
     requires_attunement = models.TextField(
@@ -334,7 +338,8 @@ class Armor(GameContent):
     plus_dex_mod = models.BooleanField(default=False)
     plus_con_mod = models.BooleanField(default=False)
     plus_wis_mod = models.BooleanField(default=False)
-    plus_flat_mod = models.IntegerField(default=False)  # Build a shield this way.
+    # Build a shield this way.
+    plus_flat_mod = models.IntegerField(default=False)
     plus_max = models.IntegerField(default=0)
 
     def ac_string(self):

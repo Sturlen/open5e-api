@@ -5,10 +5,12 @@ from rest_framework import serializers
 from api import models
 from api import search_indexes
 
+
 class ManifestSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Manifest
         fields = ('filename', 'type', 'hash', 'created_at')
+
 
 class DynamicFieldsModelSerializer(serializers.ModelSerializer):
 
@@ -27,35 +29,39 @@ class DynamicFieldsModelSerializer(serializers.ModelSerializer):
                 for field_name in existing - allowed:
                     self.fields.pop(field_name)
 
+
 class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = User
         fields = ('url', 'username', 'email', 'groups')
 
+
 class DocumentSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-            model = models.Document
-            fields = (
-                'title',
-                'slug',
-                'url',
-                'license',
-                'desc',
-                'license',
-                'author',
-                'organization',
-                'version',
-                'created_at',
-                'copyright',
-                'license_url',)
+        model = models.Document
+        fields = (
+            'title',
+            'slug',
+            'url',
+            'license',
+            'desc',
+            'license',
+            'author',
+            'organization',
+            'version',
+            'created_at',
+            'copyright',
+            'license_url',)
+
 
 class GroupSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Group
         fields = ('url', 'name')
 
+
 class MonsterSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer, serializers.ModelSerializer):
-    
+
     speed = serializers.SerializerMethodField()
     environments = serializers.SerializerMethodField()
     skills = serializers.SerializerMethodField()
@@ -72,7 +78,7 @@ class MonsterSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedMod
         if img_url != None:
             return ('http://{domain}/{path}'.format(domain=domain, path=img_url))
         else:
-             return None
+            return None
 
     def get_speed(self, monster):
         return monster.speed()
@@ -94,7 +100,6 @@ class MonsterSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedMod
 
     def get_special_abilities(self, monster):
         return monster.special_abilities()
-
 
     class Meta:
         model = models.Monster
@@ -149,6 +154,7 @@ class MonsterSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedMod
             'document__url'
         )
 
+
 class SpellSerializer(DynamicFieldsModelSerializer):
 
     ritual = serializers.CharField(source='v1_ritual')
@@ -192,8 +198,9 @@ class SpellSerializer(DynamicFieldsModelSerializer):
             'document__url'
         )
 
+
 class SpellListSerializer(DynamicFieldsModelSerializer):
-    #spells = SpellSerializer(many=True, read_only=True, context={'request': ''}) #Passing a blank request.
+    # spells = SpellSerializer(many=True, read_only=True, context={'request': ''}) #Passing a blank request.
     class Meta:
         model = models.SpellList
         fields = (
@@ -206,6 +213,7 @@ class SpellListSerializer(DynamicFieldsModelSerializer):
             'document__license_url',
             'document__url'
         )
+
 
 class BackgroundSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
     class Meta:
@@ -227,10 +235,13 @@ class BackgroundSerializer(DynamicFieldsModelSerializer, serializers.Hyperlinked
             'document__url'
         )
 
+
 class PlaneSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
     class Meta:
         model = models.Plane
-        fields = ('slug','name','desc','document__slug', 'document__title', 'document__url')
+        fields = ('slug', 'name', 'desc', 'document__slug',
+                  'document__title', 'document__url')
+
 
 class SectionSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
     class Meta:
@@ -246,6 +257,7 @@ class SectionSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedMod
             'parent'
         )
 
+
 class FeatSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
     class Meta:
         model = models.Feat
@@ -260,6 +272,7 @@ class FeatSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelS
             'document__url'
         )
 
+
 class ConditionSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
     class Meta:
         model = models.Condition
@@ -272,22 +285,25 @@ class ConditionSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedM
             'document__url'
         )
 
+
 class SubraceSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = models.Subrace
         fields = ('name',
-        'slug',
-        'desc',
-        'asi',
-        'traits',
-        'asi_desc',
-        'document__slug',
-        'document__title',
-        'document__url'
-    )
+                  'slug',
+                  'desc',
+                  'asi',
+                  'traits',
+                  'asi_desc',
+                  'document__slug',
+                  'document__title',
+                  'document__url'
+                  )
+
 
 class RaceSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
-    subraces = SubraceSerializer(many=True,read_only=True)
+    subraces = SubraceSerializer(many=True, read_only=True)
+
     class Meta:
         model = models.Race
         fields = (
@@ -312,6 +328,7 @@ class RaceSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelS
             'document__url'
         )
 
+
 class ArchetypeSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = models.Archetype
@@ -325,8 +342,10 @@ class ArchetypeSerializer(serializers.HyperlinkedModelSerializer):
             'document__url'
         )
 
+
 class CharClassSerializer(serializers.HyperlinkedModelSerializer):
-    archetypes = ArchetypeSerializer(many=True,read_only=True)
+    archetypes = ArchetypeSerializer(many=True, read_only=True)
+
     class Meta:
         model = models.CharClass
         fields = (
@@ -352,6 +371,7 @@ class CharClassSerializer(serializers.HyperlinkedModelSerializer):
             'document__url'
         )
 
+
 class MagicItemSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
     class Meta:
         model = models.MagicItem
@@ -360,12 +380,15 @@ class MagicItemSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedM
             'name',
             'type',
             'desc',
+            'components',
+            'requirements',
             'rarity',
             'requires_attunement',
             'document__slug',
             'document__title',
             'document__url'
         )
+
 
 class WeaponSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
@@ -383,6 +406,7 @@ class WeaponSerializer(serializers.HyperlinkedModelSerializer):
             'damage_type',
             'weight',
             'properties')
+
 
 class ArmorSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
@@ -407,39 +431,39 @@ class ArmorSerializer(serializers.HyperlinkedModelSerializer):
             'weight',
             'stealth_disadvantage')
 
+
 class AggregateSerializer(HighlighterMixin, HaystackSerializer):
 
     class Meta:
-        index_classes = [search_indexes.MonsterIndex, 
-            search_indexes.SpellIndex, 
-            search_indexes.SectionIndex, 
-            search_indexes.ConditionIndex, 
-            search_indexes.CharClassIndex, 
-            search_indexes.RaceIndex,
-            search_indexes.MagicItemIndex,]
+        index_classes = [search_indexes.MonsterIndex,
+                         search_indexes.SpellIndex,
+                         search_indexes.SectionIndex,
+                         search_indexes.ConditionIndex,
+                         search_indexes.CharClassIndex,
+                         search_indexes.RaceIndex,
+                         search_indexes.MagicItemIndex,]
         fields = ['name',
-            'text',
-            'route',
-            'slug',
-            'level',
-            'school',
-            'dnd_class',
-            'ritual',
-            'armor_class',
-            'hit_points',
-            'hit_dice',
-            'challenge_rating',
-            'strength',
-            'dexterity',
-            'constitution',
-            'intelligence',
-            'wisdom',
-            'charisma',
-            'rarity',
-            'type',
-            'source',
-            'requires_attunement',
-            'document_slug',
-            'document_title'
-        ]
-        
+                  'text',
+                  'route',
+                  'slug',
+                  'level',
+                  'school',
+                  'dnd_class',
+                  'ritual',
+                  'armor_class',
+                  'hit_points',
+                  'hit_dice',
+                  'challenge_rating',
+                  'strength',
+                  'dexterity',
+                  'constitution',
+                  'intelligence',
+                  'wisdom',
+                  'charisma',
+                  'rarity',
+                  'type',
+                  'source',
+                  'requires_attunement',
+                  'document_slug',
+                  'document_title'
+                  ]

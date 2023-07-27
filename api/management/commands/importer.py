@@ -130,7 +130,8 @@ class Importer:
         i.slug = slug
         i.desc = document_json["desc"]
         i.author = document_json["author"]
-        i.organization = document_json["organization"] #Fixing issue identified in testing.
+        # Fixing issue identified in testing.
+        i.organization = document_json["organization"]
         i.license = document_json["license"]
         i.version = document_json["version"]
         i.url = document_json["url"]
@@ -225,7 +226,8 @@ class Importer:
             i.save()
         for subclass in class_json.get("subtypes", []):
             subclass["char_class"] = i
-        self.import_models_from_json(import_spec.sub_spec, class_json["subtypes"])
+        self.import_models_from_json(
+            import_spec.sub_spec, class_json["subtypes"])
         return result
 
     def import_archetype(self, archetype_json, import_spec) -> ImportResult:
@@ -314,13 +316,16 @@ class Importer:
             i.type = magic_item_json["type"]
         if "rarity" in magic_item_json:
             i.rarity = magic_item_json["rarity"]
+        if "requirements" in magic_item_json:
+            i.requirements = magic_item_json["requirements"]
+        if "components" in magic_item_json:
+            i.components = magic_item_json["components"]
         if "requires-attunement" in magic_item_json:
             i.requires_attunement = magic_item_json["requires-attunement"]
         result = self._determine_import_result(new, exists)
         if result is not ImportResult.SKIPPED:
             i.save()
         return result
-
 
     def import_monster(self, monster_json, import_spec) -> ImportResult:
         """Create or update a single Monster model from a JSON object.
@@ -452,7 +457,8 @@ class Importer:
         if "environments" in monster_json:
             environments_str = json.dumps(monster_json['environments'])
             i.environments_json = environments_str
-        else: i.environments_json = []
+        else:
+            i.environments_json = []
         if "actions" in monster_json:
             for idx, z in enumerate(monster_json["actions"]):
                 if "attack_bonus" in z:
@@ -468,7 +474,8 @@ class Importer:
                     if z["attack_bonus"] == 0 and "damage_dice" not in z:
                         del z["attack_bonus"]
                 monster_json["special_abilities"][idx] = z
-            i.special_abilities_json = json.dumps(monster_json["special_abilities"])
+            i.special_abilities_json = json.dumps(
+                monster_json["special_abilities"])
         else:
             i.special_abilities_json = json.dumps("")
         if "reactions" in monster_json:
@@ -496,7 +503,8 @@ class Importer:
                     if z["attack_bonus"] == 0 and "damage_dice" not in z:
                         del z["attack_bonus"]
                 monster_json["legendary_actions"][idx] = z
-            i.legendary_actions_json = json.dumps(monster_json["legendary_actions"])
+            i.legendary_actions_json = json.dumps(
+                monster_json["legendary_actions"])
         else:
             i.legendary_actions_json = json.dumps("")
         result = self._determine_import_result(new, exists)
