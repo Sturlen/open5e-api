@@ -22,7 +22,10 @@ jobs:
       - name: Run migrations
         run: pipenv run python manage.py migrate
       - name: Run Tests
-        run: pipenv run pytest
+        run: | 
+          pipenv run runserver 0.0.0.0:8000 &
+          curl http://localhost:8000/monsters
+          pipenv run pytest
   build:
     runs-on: ubuntu-latest
     steps:

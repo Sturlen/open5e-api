@@ -2,8 +2,11 @@ import os
 
 from inspect import FrameInfo
 from typing import List, Optional
-from rest_framework.test import APITestCase
+from rest_framework.test import APITestCase, APIRequestFactory
 from approvaltests import verify_as_json, Options, StackFrameNamer, verify
+
+import django
+django.setup()
 
 APPROVAL_TEST_DIR = "api/tests/approval"
 
@@ -19,8 +22,8 @@ class CustomNamer(StackFrameNamer):
         self.directory = os.path.join(os.getcwd(), APPROVAL_TEST_DIR)
         self.class_name = "api"
         # https://docs.pytest.org/en/latest/example/simple.html#pytest-current-test-environment-variable
-        current_test = os.environ.get("PYTEST_CURRENT_TEST").split(":")[-1].split(" ")[0]
-        self.method_name = current_test
+        # current_test = os.environ.get("PYTEST_CURRENT_TEST").split(":")[-1].split(" ")[0]
+        self.method_name = "current_test"
 
 
 class APIRootTest(APITestCase):
@@ -41,3 +44,12 @@ class APIRootTest(APITestCase):
 
     def test_root(self):
         self._verify(f"/?format=json")
+    
+    def test_magic_missile(self):
+        factory = APIRequestFactory()
+        request = factory.get('/monsters/?format=json', format="json")
+        print("swag", request.body)
+        self._verify(f"/monsters/?format=json")
+
+
+
