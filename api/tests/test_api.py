@@ -2,6 +2,7 @@ import requests
 
 from approvaltests import verify_as_json, Options,  DiffReporter
 
+
 class TestAPIRoot:
     """Test cases for testing the / root of the API."""
 
