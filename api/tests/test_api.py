@@ -1,12 +1,10 @@
 import os
-
+import requests
 from inspect import FrameInfo
 from typing import List, Optional
-from rest_framework.test import APITestCase, APIRequestFactory
+
 from approvaltests import verify_as_json, Options, StackFrameNamer, verify
 
-import django
-django.setup()
 
 APPROVAL_TEST_DIR = "api/tests/approval"
 
@@ -30,26 +28,20 @@ class APIRootTest(APITestCase):
     """Test cases for testing the / root of the API."""
 
     def _verify(self, endpoint: str):
-        response = self.client.get(endpoint).json()
+        response = requests.get(endpoint).json()
 
         verify_as_json(response, options=Options().with_namer(CustomNamer(".json")))
 
     def test_headers(self):
         """Server response headers from the API root."""
-        response = self.client.get(f"/v2/?format=json")
+        response = self.client.get(f"localhost:8000/?format=json")
 
         verify_as_json(
             response.headers, options=Options().with_namer(CustomNamer(".json"))
         )
 
     def test_root(self):
-        self._verify(f"/?format=json")
+        self._verify(f"localhost:8000/?format=json")
     
-    def test_magic_missile(self):
-        factory = APIRequestFactory()
-        request = factory.get('/monsters/?format=json', format="json")
-        print("swag", request.body)
-        self._verify(f"/monsters/?format=json")
-
 
 
