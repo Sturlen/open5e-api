@@ -4,10 +4,6 @@
             "Allow",
             "GET, HEAD, OPTIONS"
         ],
-        "content-length": [
-            "Content-Length",
-            "599"
-        ],
         "content-type": [
             "Content-Type",
             "application/json"
@@ -15,6 +11,10 @@
         "referrer-policy": [
             "Referrer-Policy",
             "same-origin"
+        ],
+        "server": [
+            "Server",
+            "WSGIServer/0.2 CPython/3.11.5"
         ],
         "vary": [
             "Vary",

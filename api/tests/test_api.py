@@ -20,11 +20,11 @@ class CustomNamer(StackFrameNamer):
         self.directory = os.path.join(os.getcwd(), APPROVAL_TEST_DIR)
         self.class_name = "api"
         # https://docs.pytest.org/en/latest/example/simple.html#pytest-current-test-environment-variable
-        # current_test = os.environ.get("PYTEST_CURRENT_TEST").split(":")[-1].split(" ")[0]
-        self.method_name = "current_test"
+        current_test = os.environ.get("PYTEST_CURRENT_TEST").split(":")[-1].split(" ")[0]
+        self.method_name = current_test
 
 
-class APIRootTest(APITestCase):
+class TestAPIRoot:
     """Test cases for testing the / root of the API."""
 
     def _verify(self, endpoint: str):
@@ -34,14 +34,16 @@ class APIRootTest(APITestCase):
 
     def test_headers(self):
         """Server response headers from the API root."""
-        response = self.client.get(f"localhost:8000/?format=json")
+        headers = requests.get(f"http://localhost:8000/?format=json").headers
 
+        headers.pop("Date")
+        headers.pop("Content-Length")
         verify_as_json(
-            response.headers, options=Options().with_namer(CustomNamer(".json"))
+            headers, options=Options().with_namer(CustomNamer(".json"))
         )
 
     def test_root(self):
-        self._verify(f"localhost:8000/?format=json")
+        self._verify(f"http://localhost:8000/?format=json")
     
 
 
