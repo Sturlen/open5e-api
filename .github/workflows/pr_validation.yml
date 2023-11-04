@@ -20,7 +20,7 @@ jobs:
       - name: Install Dependencies
         run: pipenv install --dev
       - name: Run migrations
-        run: pipenv run python manage.py quicksetup
+        run: pipenv run python manage.py quicksetup --noindex
       - name: Run Tests
         run: |
           pipenv run python manage.py runserver 0.0.0.0:8000 &
