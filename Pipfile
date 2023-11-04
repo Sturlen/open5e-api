@@ -24,6 +24,7 @@ uritemplate = "*"
 newrelic = "*"
 approvaltests = "*"
 pytest-approvaltests = "*"
+requests = "*"
 
 [dev-packages]
 pytest = "*"
