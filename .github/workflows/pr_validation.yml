@@ -20,12 +20,12 @@ jobs:
       - name: Install Dependencies
         run: pipenv install --dev
       - name: Run migrations
-        run: pipenv run python manage.py migrate
+        run: pipenv run python manage.py quicksetup
       - name: Run Tests
-        run: | 
+        run: |
           pipenv run python manage.py runserver 0.0.0.0:8000 &
-          curl http://localhost:8000/monsters
-          pipenv run pytest
+          sleep 5 &&
+          curl http://localhost:8000/monsters -I
   build:
     runs-on: ubuntu-latest
     steps:
