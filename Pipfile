@@ -22,6 +22,8 @@ whoosh = "*"
 pyyaml = "*"
 uritemplate = "*"
 newrelic = "*"
+approvaltests = "*"
+pytest-approvaltests = "*"
 
 [dev-packages]
 pytest = "*"
