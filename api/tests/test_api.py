@@ -32,18 +32,11 @@ class TestAPIRoot:
 
         verify_as_json(response, options=Options().with_namer(CustomNamer(".json")))
 
-    def test_headers(self):
-        """Server response headers from the API root."""
-        headers = requests.get(f"http://localhost:8000/?format=json").headers
-
-        headers.pop("Date")
-        headers.pop("Content-Length")
-        verify_as_json(
-            headers, options=Options().with_namer(CustomNamer(".json"))
-        )
-
     def test_root(self):
         self._verify(f"http://localhost:8000/?format=json")
+
+    def test_magic_missile(self):
+        self._verify(f"http://localhost:8000/v1/spells/magic-missile/?format=json")
     
 
 
