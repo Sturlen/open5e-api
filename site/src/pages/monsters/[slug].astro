@@ -10,7 +10,7 @@ interface Props {
 }
 
 export async function getStaticPaths() {
-    const modules = [...(await Astro.glob("/data/**/monsters.json"))] as [
+    const modules = [...(await Astro.glob("/cache/monsters.json"))] as [
         { default: any[] }
     ]
 

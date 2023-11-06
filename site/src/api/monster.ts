@@ -12,18 +12,19 @@ export const MonsterSchema = z
         subtype: z.string().nullish(),
         group: z.string().nullish(),
         alignment: z.string(),
-        armor_class: z.number(),
+        ac: z.coerce.number().nullish(),
+        armor_class: z.coerce.number().nullish(),
         armor_desc: z.string().nullish(),
-        hit_points: z.number(),
+        hit_points: z.coerce.number(),
         hit_dice: z.string(),
-        speed: z.string(),
+        speed: z.string().or(SpeedSchema),
         speed_json: SpeedSchema,
-        strength: z.number(),
-        dexterity: z.number(),
-        constitution: z.number(),
-        intelligence: z.number(),
-        wisdom: z.number(),
-        charisma: z.number(),
+        strength: z.coerce.number(),
+        dexterity: z.coerce.number(),
+        constitution: z.coerce.number(),
+        intelligence: z.coerce.number(),
+        wisdom: z.coerce.number(),
+        charisma: z.coerce.number(),
         strength_save: z.number().nullish(),
         dexterity_save: z.number().nullish(),
         constitution_save: z.number().nullish(),
@@ -38,7 +39,7 @@ export const MonsterSchema = z
         condition_immunities: z.string().nullish(),
         senses: z.string(),
         languages: z.string().nullish(),
-        challenge_rating: z.string(),
+        challenge_rating: z.coerce.string(),
         actions: z.string().or(
             z.array(
                 z.object({
@@ -99,11 +100,14 @@ export const MonsterSchema = z
             charisma,
             name,
             slug,
+            ac,
+            armor_class,
             ...rest
         } = m
         return {
             ...rest,
             name,
+            armor_class: armor_class || ac || 42,
             slug: slug || toSlug(name),
             stats: {
                 str: strength,
