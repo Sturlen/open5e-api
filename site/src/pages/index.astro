@@ -1,0 +1,84 @@
+---
+import Layout from "../layouts/Layout.astro"
+---
+
+<Layout title="Open5e Static Site Test">
+    <main>
+        <h1><span class="text-gradient">Open5e Test</span></h1>
+        <p class="instructions">
+            This site uses the Open5e api and renders it's content to static
+            webpage to become blazingly fast. Browse to your hearts desire.
+        </p>
+        <a href="https://open5e.com">Main Open5e Site</a>
+        <h2>Content</h2>
+        <p class="instructions"><a href="/classes">Classes</a></p>
+
+        <p class="instructions"><a href="/monsters">Monsters</a></p>
+        <p class="instructions"><a href="/spells">Spells</a></p>
+    </main>
+</Layout>
+
+<style>
+    main {
+        margin: auto;
+        padding: 1.5rem;
+        max-width: 80ch;
+    }
+    h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        margin: 0;
+    }
+    .text-gradient {
+        background-image: var(--accent-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 400%;
+        background-position: 0%;
+    }
+    .instructions {
+        line-height: 1.6;
+        margin: 1rem 0;
+        border: 1px solid rgba(var(--accent), 25%);
+        background-color: white;
+        padding: 1rem;
+        border-radius: 0.4rem;
+    }
+    .instructions code {
+        font-size: 0.875em;
+        font-weight: bold;
+        background: rgba(var(--accent), 12%);
+        color: rgb(var(--accent));
+        border-radius: 4px;
+        padding: 0.3em 0.45em;
+    }
+    .instructions strong {
+        color: rgb(var(--accent));
+    }
+
+    .card {
+        margin: 0.1rem 0;
+        border: 1px solid rgba(var(--accent), 25%);
+        background-color: white;
+        padding: 1rem;
+        border-radius: 0.4rem;
+    }
+
+    .card .title {
+        display: flex;
+    }
+
+    .card .source {
+        display: inline-block;
+        margin-left: auto;
+        line-height: 20px;
+        height: 20px;
+        border-radius: 20px;
+        padding: 1px 10px;
+        padding-bottom: 3px;
+        background-color: rgb(var(--accent));
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+    }
+</style>

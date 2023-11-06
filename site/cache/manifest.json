@@ -1,0 +1,158 @@
+[
+    {
+        "filename": "data/open5e_original/backgrounds.json",
+        "type": "backgrounds",
+        "hash": "c7e349e82082fbb8623f61eec9fb9674",
+        "created_at": "2023-05-12T15:40:52.515553"
+    },
+    {
+        "filename": "data/open5e_original/spells.json",
+        "type": "spells",
+        "hash": "7732ca4ac40164054a883b68c02d073d",
+        "created_at": "2023-05-12T15:40:52.518656"
+    },
+    {
+        "filename": "data/WOTC_5e_SRD_v5.1/backgrounds.json",
+        "type": "backgrounds",
+        "hash": "23bf0e41a845429dc3fd70ef2818ed77",
+        "created_at": "2023-05-12T15:40:52.524527"
+    },
+    {
+        "filename": "data/WOTC_5e_SRD_v5.1/classes.json",
+        "type": "classes",
+        "hash": "aad2c000f0834d74236dbf4428ba9778",
+        "created_at": "2023-05-12T15:40:52.526857"
+    },
+    {
+        "filename": "data/WOTC_5e_SRD_v5.1/conditions.json",
+        "type": "conditions",
+        "hash": "d6c93375ada56e196ea4ea5343236539",
+        "created_at": "2023-05-12T15:40:52.550654"
+    },
+    {
+        "filename": "data/WOTC_5e_SRD_v5.1/feats.json",
+        "type": "feats",
+        "hash": "111b9a6255168362dd25d7fc32efc51f",
+        "created_at": "2023-05-12T15:40:52.562309"
+    },
+    {
+        "filename": "data/WOTC_5e_SRD_v5.1/magicitems.json",
+        "type": "magicitems",
+        "hash": "f189b709d71b268135da894979e0be95",
+        "created_at": "2023-05-12T15:40:52.564489"
+    },
+    {
+        "filename": "data/WOTC_5e_SRD_v5.1/spells.json",
+        "type": "spells",
+        "hash": "6913e06cb7db1fcfb4018ceb61ec0de4",
+        "created_at": "2023-05-12T15:40:52.742686"
+    },
+    {
+        "filename": "data/WOTC_5e_SRD_v5.1/monsters.json",
+        "type": "monsters",
+        "hash": "379bcb731be2c601eb53cb1af464fb50",
+        "created_at": "2023-05-12T15:40:53.036515"
+    },
+    {
+        "filename": "data/WOTC_5e_SRD_v5.1/planes.json",
+        "type": "planes",
+        "hash": "2abc24a2563b3daf39c26df1fa544a64",
+        "created_at": "2023-05-12T15:40:54.082394"
+    },
+    {
+        "filename": "data/WOTC_5e_SRD_v5.1/sections.json",
+        "type": "sections",
+        "hash": "83a693ac72759de788e2f6405deb3ef6",
+        "created_at": "2023-05-12T15:40:54.085375"
+    },
+    {
+        "filename": "data/WOTC_5e_SRD_v5.1/races.json",
+        "type": "races",
+        "hash": "5cefdcf3d1b6d5a21bb149d075f5f661",
+        "created_at": "2023-05-12T15:40:54.112107"
+    },
+    {
+        "filename": "data/WOTC_5e_SRD_v5.1/weapons.json",
+        "type": "weapons",
+        "hash": "70be4689d0a3d07e5aad98b86d07ecfb",
+        "created_at": "2023-05-12T15:40:54.124450"
+    },
+    {
+        "filename": "data/WOTC_5e_SRD_v5.1/armor.json",
+        "type": "armor",
+        "hash": "2b5805fefc881bf65ed11a5242be7955",
+        "created_at": "2023-05-12T15:40:54.154205"
+    },
+    {
+        "filename": "data/tome_of_beasts/monsters.json",
+        "type": "monsters",
+        "hash": "7cfe17476acccc88522593977bfd4e49",
+        "created_at": "2023-05-12T15:40:54.181533"
+    },
+    {
+        "filename": "data/creature_codex/monsters.json",
+        "type": "monsters",
+        "hash": "8a93624345fd51e05818f1ca24e62255",
+        "created_at": "2023-05-12T15:40:54.673149"
+    },
+    {
+        "filename": "data/tome_of_beasts_2/monsters.json",
+        "type": "monsters",
+        "hash": "1f1a6e62c3d60613069fe1e276675bfb",
+        "created_at": "2023-05-12T15:40:55.130216"
+    },
+    {
+        "filename": "data/deep_magic/spells.json",
+        "type": "spells",
+        "hash": "bb3d3fcaa2b428b141ae3652d9ea8d8b",
+        "created_at": "2023-05-12T15:40:55.618344"
+    },
+    {
+        "filename": "data/menagerie/monsters.json",
+        "type": "monsters",
+        "hash": "ca14887d1362f4284c14e2d63d2e56a7",
+        "created_at": "2023-05-12T15:40:55.697341"
+    },
+    {
+        "filename": "data/tome_of_beasts_3/monsters.json",
+        "type": "monsters",
+        "hash": "2caf8602887865b332de7c0f97107fd7",
+        "created_at": "2023-05-12T15:40:56.452615"
+    },
+    {
+        "filename": "data/a5e_srd/backgrounds.json",
+        "type": "backgrounds",
+        "hash": "ed6c999309a179208f5303ce52288a30",
+        "created_at": "2023-05-12T15:40:56.940092"
+    },
+    {
+        "filename": "data/a5e_srd/feats.json",
+        "type": "feats",
+        "hash": "5f14b70cbb1c7789fcd8bdde8d992a52",
+        "created_at": "2023-05-12T15:40:56.954886"
+    },
+    {
+        "filename": "data/kobold_press/spells.json",
+        "type": "spells",
+        "hash": "1c2b3f5083f112f6e3edb5caeed9a5d5",
+        "created_at": "2023-05-12T15:40:57.008260"
+    },
+    {
+        "filename": "data/deep_magic_extended/spells.json",
+        "type": "spells",
+        "hash": "9223470e32e5ca6a902eb714591a0d46",
+        "created_at": "2023-05-12T15:40:57.043635"
+    },
+    {
+        "filename": "data/warlock/spells.json",
+        "type": "spells",
+        "hash": "a599cbf50676f355f9453b776f65e3be",
+        "created_at": "2023-05-12T15:40:57.109905"
+    },
+    {
+        "filename": "data/vault_of_magic/magicitems.json",
+        "type": "magicitems",
+        "hash": "d2629f4ad91c1ff3a6e17a776c0e6570",
+        "created_at": "2023-05-12T15:40:57.159628"
+    }
+]

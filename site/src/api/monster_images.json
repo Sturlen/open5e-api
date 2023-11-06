@@ -1,0 +1,2415 @@
+{
+  "sha": "4c90c436da9311804ff93fd12cbb95b4f41809ec",
+  "url": "https://api.github.com/repos/Sturlen/open5e-api/git/trees/4c90c436da9311804ff93fd12cbb95b4f41809ec",
+  "tree": [
+    {
+      "path": "aarakocra.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1fa7f6cdc4b8dbe63b9df8b50d143123f5dedbcf",
+      "size": 350532,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/1fa7f6cdc4b8dbe63b9df8b50d143123f5dedbcf"
+    },
+    {
+      "path": "aboleth.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de0f4e3a4f6679da995ad9521e2d0fcbfbca7e9a",
+      "size": 835384,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/de0f4e3a4f6679da995ad9521e2d0fcbfbca7e9a"
+    },
+    {
+      "path": "adult-brass-dragon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3d193477731b2e1b171c81d5e28a2459933bef2",
+      "size": 752999,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/b3d193477731b2e1b171c81d5e28a2459933bef2"
+    },
+    {
+      "path": "adult-bronze-dragon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83589b39a3d402bee53602b17adaeb4c79580246",
+      "size": 562893,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/83589b39a3d402bee53602b17adaeb4c79580246"
+    },
+    {
+      "path": "adult-copper-dragon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e851785dd408851bd1200046569bdb377caa9fd6",
+      "size": 440306,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/e851785dd408851bd1200046569bdb377caa9fd6"
+    },
+    {
+      "path": "adult-gold-dragon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "467473bd64e1c46ecaf665a9a90cf386edbdd002",
+      "size": 328255,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/467473bd64e1c46ecaf665a9a90cf386edbdd002"
+    },
+    {
+      "path": "adult-silver-dragon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75d7458403a054e52b748be1c2fe0007293f2255",
+      "size": 529120,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/75d7458403a054e52b748be1c2fe0007293f2255"
+    },
+    {
+      "path": "air-elemental.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15924e234ad9947ad612ce1dee0b7fdb826bff2d",
+      "size": 430518,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/15924e234ad9947ad612ce1dee0b7fdb826bff2d"
+    },
+    {
+      "path": "allosaurus.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae472f673d3faf7a07e918f9fecb9cf5c4c64a3a",
+      "size": 321865,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/ae472f673d3faf7a07e918f9fecb9cf5c4c64a3a"
+    },
+    {
+      "path": "ancient-brass-dragon-flying.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15e5ac27eba92e14427a04eae9c52da1f9a4841d",
+      "size": 495815,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/15e5ac27eba92e14427a04eae9c52da1f9a4841d"
+    },
+    {
+      "path": "ancient-brass-dragon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e307bb7a3c2ebf6433ebecc2d9f07ab0d5ead80",
+      "size": 501330,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/7e307bb7a3c2ebf6433ebecc2d9f07ab0d5ead80"
+    },
+    {
+      "path": "ancient-bronze-dragon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0f2b95a9244855cf8327cff83f7ae63e5be96bb",
+      "size": 551845,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/e0f2b95a9244855cf8327cff83f7ae63e5be96bb"
+    },
+    {
+      "path": "ancient-copper-dragon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18847b4b92c5ad3908c682a779ddb99dc5c3ab9d",
+      "size": 535170,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/18847b4b92c5ad3908c682a779ddb99dc5c3ab9d"
+    },
+    {
+      "path": "ancient-gold-dragon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc6a939f24a33f99aea3e700abc7c10d1596c3e9",
+      "size": 463120,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/bc6a939f24a33f99aea3e700abc7c10d1596c3e9"
+    },
+    {
+      "path": "ancient-silver-dragon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97bd6a78335282a81a7b7976350108523cc42c8f",
+      "size": 638202,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/97bd6a78335282a81a7b7976350108523cc42c8f"
+    },
+    {
+      "path": "androsphinx.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88c26f738129cc384346911fee6fccd9922f820d",
+      "size": 527988,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/88c26f738129cc384346911fee6fccd9922f820d"
+    },
+    {
+      "path": "animated-armor.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5de63bc546a824eeee30dae323894556d6fa2da4",
+      "size": 338175,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/5de63bc546a824eeee30dae323894556d6fa2da4"
+    },
+    {
+      "path": "ankheg.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af9a3770edaf90f800ee672a1f94a441e1f929e5",
+      "size": 290082,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/af9a3770edaf90f800ee672a1f94a441e1f929e5"
+    },
+    {
+      "path": "ankylosaurus.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65898f4b9c1b019e9bead4e629d0b738863b6ab7",
+      "size": 259468,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/65898f4b9c1b019e9bead4e629d0b738863b6ab7"
+    },
+    {
+      "path": "arcanaloth.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c7f1697a9961003645ec711b40d2b34da1e24ca",
+      "size": 428297,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/7c7f1697a9961003645ec711b40d2b34da1e24ca"
+    },
+    {
+      "path": "asmodeus.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8418c54e01dc1da1b6906d1dbc5e737189789bd7",
+      "size": 480040,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/8418c54e01dc1da1b6906d1dbc5e737189789bd7"
+    },
+    {
+      "path": "azer.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0491a09528e899fe6ae29c609a653bb9832bf8d4",
+      "size": 406471,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/0491a09528e899fe6ae29c609a653bb9832bf8d4"
+    },
+    {
+      "path": "baalzebul.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0023541d81e4be1efbbf4857ffe56d2211ca51e3",
+      "size": 404789,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/0023541d81e4be1efbbf4857ffe56d2211ca51e3"
+    },
+    {
+      "path": "bahamut.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c1ce1be2b9aa4bf821c71d42f47472330e68960",
+      "size": 477232,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/6c1ce1be2b9aa4bf821c71d42f47472330e68960"
+    },
+    {
+      "path": "balor.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe65d9ce127dc2b8201d452d7704ae4d5d540dd2",
+      "size": 502149,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/fe65d9ce127dc2b8201d452d7704ae4d5d540dd2"
+    },
+    {
+      "path": "banshee.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97df172c7000a782d81ce669e56a87ed8a1dcab2",
+      "size": 365675,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/97df172c7000a782d81ce669e56a87ed8a1dcab2"
+    },
+    {
+      "path": "barbed-devil.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71ffdf4b0946d1713f950ca49c7770d8c85ebe38",
+      "size": 327447,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/71ffdf4b0946d1713f950ca49c7770d8c85ebe38"
+    },
+    {
+      "path": "barlgura.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd49411f21b0b5c451fbb3ab9fc97e38cc9d4cbd",
+      "size": 569958,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/dd49411f21b0b5c451fbb3ab9fc97e38cc9d4cbd"
+    },
+    {
+      "path": "basilisk.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3e113b2d01ffe019e8a81a2c63d1641f8c7d2a4",
+      "size": 429970,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/c3e113b2d01ffe019e8a81a2c63d1641f8c7d2a4"
+    },
+    {
+      "path": "bearded-devil.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4b789d898e0537efe4d29fa4d0051411247dbef",
+      "size": 264684,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/f4b789d898e0537efe4d29fa4d0051411247dbef"
+    },
+    {
+      "path": "behir.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b55a823f6ae22c98996524715aa93453d2c6dad3",
+      "size": 283117,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/b55a823f6ae22c98996524715aa93453d2c6dad3"
+    },
+    {
+      "path": "black-dragon-adult.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11f11de939b13d135b2d9c20fab5ea10fa5edd94",
+      "size": 375109,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/11f11de939b13d135b2d9c20fab5ea10fa5edd94"
+    },
+    {
+      "path": "black-dragon-ancient.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec6f7b12574c4564a9c9ecd3c851857df8754a92",
+      "size": 473773,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/ec6f7b12574c4564a9c9ecd3c851857df8754a92"
+    },
+    {
+      "path": "black-dragon-young.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c9fbf7339bfd66b79fec18b02094e4068696830",
+      "size": 299756,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/2c9fbf7339bfd66b79fec18b02094e4068696830"
+    },
+    {
+      "path": "black-pudding.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f200409e60c81207cfbaae27c03d160ca6ae75d8",
+      "size": 375954,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/f200409e60c81207cfbaae27c03d160ca6ae75d8"
+    },
+    {
+      "path": "blue-dragon-adult.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1dcf8c3e844ae616f28cff1605ed2a76a36a728b",
+      "size": 471353,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/1dcf8c3e844ae616f28cff1605ed2a76a36a728b"
+    },
+    {
+      "path": "blue-dragon-ancient.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "beea4b738d909d07e5d92157c29b19b8ecac5847",
+      "size": 458792,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/beea4b738d909d07e5d92157c29b19b8ecac5847"
+    },
+    {
+      "path": "blue-dragon-wyrmling.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bfae3585b3e7bf89edc69a7ac259789e654d6f0b",
+      "size": 300372,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/bfae3585b3e7bf89edc69a7ac259789e654d6f0b"
+    },
+    {
+      "path": "blue-dragon-young.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b603c1f24e6309abba8e4428bae3906d60eb40b3",
+      "size": 347482,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/b603c1f24e6309abba8e4428bae3906d60eb40b3"
+    },
+    {
+      "path": "blue-slaad.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0067df0adade1df569eadb291e09ebc316ef159f",
+      "size": 577971,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/0067df0adade1df569eadb291e09ebc316ef159f"
+    },
+    {
+      "path": "bone-devil.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09cc22ab1d2f6b2a34c1c9008236ab1b608e9000",
+      "size": 343571,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/09cc22ab1d2f6b2a34c1c9008236ab1b608e9000"
+    },
+    {
+      "path": "bone-naga.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b1eb532613a6061465591eb3b5fa137fa3f8c42",
+      "size": 359410,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/0b1eb532613a6061465591eb3b5fa137fa3f8c42"
+    },
+    {
+      "path": "brass-dragon-wyrmling.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95ce0634e6d97c26780d6b31e4e258c1879cdef5",
+      "size": 443993,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/95ce0634e6d97c26780d6b31e4e258c1879cdef5"
+    },
+    {
+      "path": "bronze-dragon-wyrmling.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77e7fa9a12fc5e5db69a90d48a05ee50b16f5c17",
+      "size": 212972,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/77e7fa9a12fc5e5db69a90d48a05ee50b16f5c17"
+    },
+    {
+      "path": "bulette.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15aa364ae815b71826d7e4dbd3d203b4410d2677",
+      "size": 880517,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/15aa364ae815b71826d7e4dbd3d203b4410d2677"
+    },
+    {
+      "path": "cambion.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f43cf5c633f6588f2899bcbcfb56905f8f87038",
+      "size": 471110,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/1f43cf5c633f6588f2899bcbcfb56905f8f87038"
+    },
+    {
+      "path": "carrion-crawler.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7960e9a26f0e4f446e971207d916e93487debfe",
+      "size": 356785,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/a7960e9a26f0e4f446e971207d916e93487debfe"
+    },
+    {
+      "path": "centaur.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1bbc2ffb6ad358de35c5b34c55e6852907d38e9f",
+      "size": 310298,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/1bbc2ffb6ad358de35c5b34c55e6852907d38e9f"
+    },
+    {
+      "path": "chain-devil.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9d8fd508ae5907a1ec9f17ba22e7d0ed2b4731b",
+      "size": 418360,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/c9d8fd508ae5907a1ec9f17ba22e7d0ed2b4731b"
+    },
+    {
+      "path": "chasme.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00be10e18851c916399ee6feb241cc99fa420157",
+      "size": 317389,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/00be10e18851c916399ee6feb241cc99fa420157"
+    },
+    {
+      "path": "chest-mimic.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "353fa04cce3690d426b7602c1859db4f8e10ace8",
+      "size": 744720,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/353fa04cce3690d426b7602c1859db4f8e10ace8"
+    },
+    {
+      "path": "chonky-red-dragon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00181f98a202a19f8f2b6382c0ba4e96f6de1e67",
+      "size": 468901,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/00181f98a202a19f8f2b6382c0ba4e96f6de1e67"
+    },
+    {
+      "path": "chuul.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c4d23daf34b4bd534b1f18606ea81799bc3d6c6",
+      "size": 972284,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/8c4d23daf34b4bd534b1f18606ea81799bc3d6c6"
+    },
+    {
+      "path": "clay-golem.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b9bd9fc73ca60aa87fd34918f54ec29317ab26f",
+      "size": 366533,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/0b9bd9fc73ca60aa87fd34918f54ec29317ab26f"
+    },
+    {
+      "path": "cloaker.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0927e0f4210d8f50b01ce4f1ee121262179075fc",
+      "size": 829432,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/0927e0f4210d8f50b01ce4f1ee121262179075fc"
+    },
+    {
+      "path": "cloud-giant.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fbb12bfdf6a0223311006191923c8b11f86b6cd7",
+      "size": 237888,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/fbb12bfdf6a0223311006191923c8b11f86b6cd7"
+    },
+    {
+      "path": "cockatrice.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "acd22d458e36779169a00df21a2d5f2d03f16fd3",
+      "size": 990741,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/acd22d458e36779169a00df21a2d5f2d03f16fd3"
+    },
+    {
+      "path": "copper-dragon-wyrmling.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d117ab6facc1e90651510cd5a055ef55e735715",
+      "size": 285000,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/4d117ab6facc1e90651510cd5a055ef55e735715"
+    },
+    {
+      "path": "couatl.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee5a88508a2a303150fa7447abf6c30aff8cc251",
+      "size": 999360,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/ee5a88508a2a303150fa7447abf6c30aff8cc251"
+    },
+    {
+      "path": "dao.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3faa11e5dddebc6486e46fbded7be51bb2861e2f",
+      "size": 373204,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/3faa11e5dddebc6486e46fbded7be51bb2861e2f"
+    },
+    {
+      "path": "darkmantle.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e7a7ce2d75cffe6e628cf1c7de4de557273f7f2",
+      "size": 278171,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/8e7a7ce2d75cffe6e628cf1c7de4de557273f7f2"
+    },
+    {
+      "path": "death-knight.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1fcdce6da74e969f76e677b923f610497bb49b7",
+      "size": 443993,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/d1fcdce6da74e969f76e677b923f610497bb49b7"
+    },
+    {
+      "path": "death-slaad.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6492bf8f680e034aa25a4ea7ab2e674a8b2eed3b",
+      "size": 537782,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/6492bf8f680e034aa25a4ea7ab2e674a8b2eed3b"
+    },
+    {
+      "path": "decaton.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eacfef9341c635582e880a2b1421975a05d61e6d",
+      "size": 583879,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/eacfef9341c635582e880a2b1421975a05d61e6d"
+    },
+    {
+      "path": "demilich.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61cd7e59180ef3b0a5f5bb6b8fec79d60f37b1f1",
+      "size": 508167,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/61cd7e59180ef3b0a5f5bb6b8fec79d60f37b1f1"
+    },
+    {
+      "path": "deva.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14e3d13a817bc123e0c8687057afe13e24192940",
+      "size": 235267,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/14e3d13a817bc123e0c8687057afe13e24192940"
+    },
+    {
+      "path": "displacer-beast.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7400d58807c1bca7514ab804e06e345c54ccd668",
+      "size": 210531,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/7400d58807c1bca7514ab804e06e345c54ccd668"
+    },
+    {
+      "path": "djinni.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36f410bfc72ceb83b4fca231963126cdf1ca5264",
+      "size": 325919,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/36f410bfc72ceb83b4fca231963126cdf1ca5264"
+    },
+    {
+      "path": "doppelganger.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27730f9e15baaae84c666f60c6556431d374100a",
+      "size": 338484,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/27730f9e15baaae84c666f60c6556431d374100a"
+    },
+    {
+      "path": "dragon-turtle.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1d17484245822f15f1019942c4ee31c3d3f726b",
+      "size": 221938,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/c1d17484245822f15f1019942c4ee31c3d3f726b"
+    },
+    {
+      "path": "dretch.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17da21b2dda18c29f7af8b79b5b78c6790d43467",
+      "size": 488981,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/17da21b2dda18c29f7af8b79b5b78c6790d43467"
+    },
+    {
+      "path": "drider.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6a3d8bc9e5b99d1ee86c0839ae02f2c75b45920",
+      "size": 538572,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/b6a3d8bc9e5b99d1ee86c0839ae02f2c75b45920"
+    },
+    {
+      "path": "drow-elite-warrior.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c11279b2c57c2bf13fdb7b8a006487582fe271ad",
+      "size": 320537,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/c11279b2c57c2bf13fdb7b8a006487582fe271ad"
+    },
+    {
+      "path": "drow-mage.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a7ec28cbdb839ea25f89a2ea585e9ee06e23568",
+      "size": 398624,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/5a7ec28cbdb839ea25f89a2ea585e9ee06e23568"
+    },
+    {
+      "path": "drow-priestess.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d6411189d58e5ddcf15d3b3c7c79983ef110807",
+      "size": 289253,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/9d6411189d58e5ddcf15d3b3c7c79983ef110807"
+    },
+    {
+      "path": "drow.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e71ef8baeb5c4a63c5cf4977566085bc280b0340",
+      "size": 298002,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/e71ef8baeb5c4a63c5cf4977566085bc280b0340"
+    },
+    {
+      "path": "dryad.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37dc907728298ec275cb34bcfa250e977ee4d6ab",
+      "size": 293086,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/37dc907728298ec275cb34bcfa250e977ee4d6ab"
+    },
+    {
+      "path": "duodron.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4df60fa37ab1df45894e63345fa994d35ebdaeea",
+      "size": 439837,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/4df60fa37ab1df45894e63345fa994d35ebdaeea"
+    },
+    {
+      "path": "earth-elemental.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "deac6ac50407a34f99f1966527f8ea32e71e8cf8",
+      "size": 698561,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/deac6ac50407a34f99f1966527f8ea32e71e8cf8"
+    },
+    {
+      "path": "efreeti.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "779d30e4507f6092195b2939b60a084eda90b9e2",
+      "size": 392290,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/779d30e4507f6092195b2939b60a084eda90b9e2"
+    },
+    {
+      "path": "empyrean.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82c7880302084df81ce9de754632ba460108c568",
+      "size": 286297,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/82c7880302084df81ce9de754632ba460108c568"
+    },
+    {
+      "path": "erinyes.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2be371c2e6f8ab2fda151b3eb685e7b83f42fd67",
+      "size": 282705,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/2be371c2e6f8ab2fda151b3eb685e7b83f42fd67"
+    },
+    {
+      "path": "ettercap.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "415c3230d47f8852be1c77a6932af7a59f7778fb",
+      "size": 282761,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/415c3230d47f8852be1c77a6932af7a59f7778fb"
+    },
+    {
+      "path": "ettin.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b91ba56336cd2fe2012a4ced39d7f33e60f42885",
+      "size": 446164,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/b91ba56336cd2fe2012a4ced39d7f33e60f42885"
+    },
+    {
+      "path": "faerie-dragon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64b1a7d661aef10a7726b1327814648d6eef0466",
+      "size": 161694,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/64b1a7d661aef10a7726b1327814648d6eef0466"
+    },
+    {
+      "path": "fire-elemental.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "136eb4b4f668664acaa02cb916b925603670ad0b",
+      "size": 572989,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/136eb4b4f668664acaa02cb916b925603670ad0b"
+    },
+    {
+      "path": "fire-giant.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "914c9c0f158ac57e515f88e4733456a0fccb9130",
+      "size": 517029,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/914c9c0f158ac57e515f88e4733456a0fccb9130"
+    },
+    {
+      "path": "fire-snake.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "636a8c49e2f337f018d54d71e304f2f3acc782cf",
+      "size": 524930,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/636a8c49e2f337f018d54d71e304f2f3acc782cf"
+    },
+    {
+      "path": "flameskull.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1b6aa2b3bacc2a2135bce0334773399f5c80b36",
+      "size": 478992,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/f1b6aa2b3bacc2a2135bce0334773399f5c80b36"
+    },
+    {
+      "path": "flesh-golem.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f45482ecc62ad36a3233d25905fceb770288b3f",
+      "size": 323001,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/0f45482ecc62ad36a3233d25905fceb770288b3f"
+    },
+    {
+      "path": "flumph.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c43a7f81eea9ea25ee90555b98c7aec05223b32",
+      "size": 416646,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/9c43a7f81eea9ea25ee90555b98c7aec05223b32"
+    },
+    {
+      "path": "fomorian.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e30f5cdfb619a5b5e1c1796d4f7e31bc1e20701b",
+      "size": 382247,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/e30f5cdfb619a5b5e1c1796d4f7e31bc1e20701b"
+    },
+    {
+      "path": "frost-giant-female.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e8a0ac922049af9edb5c586c186931e178a0258",
+      "size": 382138,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/2e8a0ac922049af9edb5c586c186931e178a0258"
+    },
+    {
+      "path": "fungal-lich.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25dd0a6f9d66c59f5ca694076d7657d12eac34b8",
+      "size": 348487,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/25dd0a6f9d66c59f5ca694076d7657d12eac34b8"
+    },
+    {
+      "path": "galeb-duhr.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10fbfbe52be642395197a9f7f96f96528df643c0",
+      "size": 659581,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/10fbfbe52be642395197a9f7f96f96528df643c0"
+    },
+    {
+      "path": "gallimimus.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "433eec26ec7d02b5d36e21ca03b16ea15827cd0d",
+      "size": 205951,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/433eec26ec7d02b5d36e21ca03b16ea15827cd0d"
+    },
+    {
+      "path": "gargoyle.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3261b8b590911508ba8ecf6037672589da18dd34",
+      "size": 256140,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/3261b8b590911508ba8ecf6037672589da18dd34"
+    },
+    {
+      "path": "gas-spore.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d15512f62b16bbaac2991b7f6ef7dc85ccaa7c96",
+      "size": 645073,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/d15512f62b16bbaac2991b7f6ef7dc85ccaa7c96"
+    },
+    {
+      "path": "gaurgath.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae472d8260b9482ea1b02088532f907fc31ae4cb",
+      "size": 459152,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/ae472d8260b9482ea1b02088532f907fc31ae4cb"
+    },
+    {
+      "path": "gelatinous-cube.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfdb36d43b553b64d9fa5a209eb25bb84a00b124",
+      "size": 927194,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/dfdb36d43b553b64d9fa5a209eb25bb84a00b124"
+    },
+    {
+      "path": "ghast.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3cf0700e8b2872a04b8ac4267d8ea743df2674c0",
+      "size": 318668,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/3cf0700e8b2872a04b8ac4267d8ea743df2674c0"
+    },
+    {
+      "path": "ghost.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0ea2ea0819d58d60dbf1933a2581508c1d17b69",
+      "size": 339533,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/d0ea2ea0819d58d60dbf1933a2581508c1d17b69"
+    },
+    {
+      "path": "ghoul.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff842b3a3f5e6327326eaa9ba3ef9d4d2238cd68",
+      "size": 312148,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/ff842b3a3f5e6327326eaa9ba3ef9d4d2238cd68"
+    },
+    {
+      "path": "gibbering-mouther.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2b440c5e62c019a8f48419801d72f77eb37da5e",
+      "size": 507242,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/f2b440c5e62c019a8f48419801d72f77eb37da5e"
+    },
+    {
+      "path": "githyanki-warrior.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8d05f63f252cae609114f6a64aee49f5eba39ea",
+      "size": 336575,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/b8d05f63f252cae609114f6a64aee49f5eba39ea"
+    },
+    {
+      "path": "glabrezu.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5fe95eeae7a8ce2d871de973ac56f80fc2047128",
+      "size": 373133,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/5fe95eeae7a8ce2d871de973ac56f80fc2047128"
+    },
+    {
+      "path": "gnoll-fang-of-yeenoghu.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3e942fa9e95a29721c2eabe131f34fc1a44b34b",
+      "size": 442696,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/c3e942fa9e95a29721c2eabe131f34fc1a44b34b"
+    },
+    {
+      "path": "gnoll-pack-lord.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0559862d68571cdf3db52657660a589df54a0f18",
+      "size": 232887,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/0559862d68571cdf3db52657660a589df54a0f18"
+    },
+    {
+      "path": "gnoll.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "930d60f9e324938f28a6e5d98bb10102c0051a58",
+      "size": 364029,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/930d60f9e324938f28a6e5d98bb10102c0051a58"
+    },
+    {
+      "path": "gnome,-deep-(snirfneblin).png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89dd5f62f52dd40f081c5c28da9b52221814851e",
+      "size": 423621,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/89dd5f62f52dd40f081c5c28da9b52221814851e"
+    },
+    {
+      "path": "goblin-chief.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97f000ddf5b879f7e4e74e024dffef84acf7b379",
+      "size": 373026,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/97f000ddf5b879f7e4e74e024dffef84acf7b379"
+    },
+    {
+      "path": "goblin-jester.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15022951e3381fa03adb6d5488c92cd227c56afe",
+      "size": 319217,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/15022951e3381fa03adb6d5488c92cd227c56afe"
+    },
+    {
+      "path": "goblin-king.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "478da8e5dce6bde7b27ebab5c99da1b9637c2034",
+      "size": 381587,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/478da8e5dce6bde7b27ebab5c99da1b9637c2034"
+    },
+    {
+      "path": "goblin.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fcf972f1c3ffd27ce84336cf8855e765ab1537ec",
+      "size": 348905,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/fcf972f1c3ffd27ce84336cf8855e765ab1537ec"
+    },
+    {
+      "path": "gold-dragon-wyrmling.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c0a7f49f5f1de58792fc32d33ed1766ac3e370a",
+      "size": 383132,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/0c0a7f49f5f1de58792fc32d33ed1766ac3e370a"
+    },
+    {
+      "path": "gold-half-dragon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e26771bc1daeeb66d85697f07167ef528b3e867",
+      "size": 414507,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/2e26771bc1daeeb66d85697f07167ef528b3e867"
+    },
+    {
+      "path": "gorgon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a0ccdf14c38e53585d4fcf385e7b6a960655d75",
+      "size": 371741,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/4a0ccdf14c38e53585d4fcf385e7b6a960655d75"
+    },
+    {
+      "path": "goristro.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7207b4fc7caf21863fb2523c35e77f1b9d33e9a",
+      "size": 543003,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/b7207b4fc7caf21863fb2523c35e77f1b9d33e9a"
+    },
+    {
+      "path": "gray-ooze.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c61aae660de3373dafee306fa409ddaae74004a",
+      "size": 525871,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/1c61aae660de3373dafee306fa409ddaae74004a"
+    },
+    {
+      "path": "gray-slaad.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3fbbebee28d676d336000070de3fabd43ca4305",
+      "size": 370803,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/b3fbbebee28d676d336000070de3fabd43ca4305"
+    },
+    {
+      "path": "green-dragon-adult.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4601a718946a626347fffd59ab0c77ff08e41a80",
+      "size": 450486,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/4601a718946a626347fffd59ab0c77ff08e41a80"
+    },
+    {
+      "path": "green-dragon-ancient.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc0674b9dbe62f2085333a454e5e1ad5dc7dd0c6",
+      "size": 445944,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/cc0674b9dbe62f2085333a454e5e1ad5dc7dd0c6"
+    },
+    {
+      "path": "green-dragon-wyrmling.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "307be1d32f0ac50699cda49bc1f6ff852c291a96",
+      "size": 426822,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/307be1d32f0ac50699cda49bc1f6ff852c291a96"
+    },
+    {
+      "path": "green-dragon-young.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18f85a26752f11d2ecfe1e625ce26fae43c29c2a",
+      "size": 361250,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/18f85a26752f11d2ecfe1e625ce26fae43c29c2a"
+    },
+    {
+      "path": "green-hag.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d53c13f75d5fe0137ec7d650274318ee8d8fd86",
+      "size": 369920,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/4d53c13f75d5fe0137ec7d650274318ee8d8fd86"
+    },
+    {
+      "path": "green-slaad.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "886e20a73594154a8037af56e84029d2ce36ede8",
+      "size": 572202,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/886e20a73594154a8037af56e84029d2ce36ede8"
+    },
+    {
+      "path": "grell.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ebb6f29c8570055b33ae78322e571bd220ddbb3",
+      "size": 293928,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/5ebb6f29c8570055b33ae78322e571bd220ddbb3"
+    },
+    {
+      "path": "grick.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17a6899bead325931555f206de6bd4c8693c64d5",
+      "size": 444067,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/17a6899bead325931555f206de6bd4c8693c64d5"
+    },
+    {
+      "path": "griffon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d123430f0d2e8d3cc6768f6c5a660a114a2239ff",
+      "size": 240708,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/d123430f0d2e8d3cc6768f6c5a660a114a2239ff"
+    },
+    {
+      "path": "grimlock.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c618ca57811a15c17f8957f316a031bcac404a8b",
+      "size": 291766,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/c618ca57811a15c17f8957f316a031bcac404a8b"
+    },
+    {
+      "path": "guardian-naga.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3df2e88f0556bc73e33e506deb6311e2ebe16fe4",
+      "size": 454353,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/3df2e88f0556bc73e33e506deb6311e2ebe16fe4"
+    },
+    {
+      "path": "gynosphinx.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34a03688b6f0d9e6bdac07bcf9d2a79ef11a7472",
+      "size": 500159,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/34a03688b6f0d9e6bdac07bcf9d2a79ef11a7472"
+    },
+    {
+      "path": "half-ogre.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "311c37d2c677bb135ce5b5d08c6d964d930c0d91",
+      "size": 436773,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/311c37d2c677bb135ce5b5d08c6d964d930c0d91"
+    },
+    {
+      "path": "harpy.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c60d2adae270904268c7c32ea755d205721301ea",
+      "size": 386587,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/c60d2adae270904268c7c32ea755d205721301ea"
+    },
+    {
+      "path": "hell-hound.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1195e9a28a081655d8ed2cd183dd8b47a7b1444",
+      "size": 532819,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/a1195e9a28a081655d8ed2cd183dd8b47a7b1444"
+    },
+    {
+      "path": "helmed-horror.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22093c2e4754ea231d14cfa269d95bc46d3b6071",
+      "size": 417647,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/22093c2e4754ea231d14cfa269d95bc46d3b6071"
+    },
+    {
+      "path": "hezrou.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a50b4dde45560fc2d5370d055cca91a9285fd86d",
+      "size": 433131,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/a50b4dde45560fc2d5370d055cca91a9285fd86d"
+    },
+    {
+      "path": "hippogriff.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "caa1ab9d0136bd267b107e78f83b2a4a0eec248c",
+      "size": 456936,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/caa1ab9d0136bd267b107e78f83b2a4a0eec248c"
+    },
+    {
+      "path": "hobgoblin-captain.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c45b5fd3275a72a739ba3be1fe0be06db5f4bab",
+      "size": 304099,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/3c45b5fd3275a72a739ba3be1fe0be06db5f4bab"
+    },
+    {
+      "path": "hobgoblin-warlord.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34eb76bdaac9177a754918bae373cacef2095fae",
+      "size": 273081,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/34eb76bdaac9177a754918bae373cacef2095fae"
+    },
+    {
+      "path": "hobgoblin.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14abc40243705af3c8df655a458d0992850c48ba",
+      "size": 261740,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/14abc40243705af3c8df655a458d0992850c48ba"
+    },
+    {
+      "path": "homunculus.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f114575572b0499acc31edeec20d216e97e04c9",
+      "size": 442850,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/4f114575572b0499acc31edeec20d216e97e04c9"
+    },
+    {
+      "path": "hook-horror.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7e7c7a4b71ac433f72b1dd318377cd2ff0ed43c",
+      "size": 324895,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/d7e7c7a4b71ac433f72b1dd318377cd2ff0ed43c"
+    },
+    {
+      "path": "horned-devil.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bfe4060628e17330c311f23d535ed7aaa7caf25b",
+      "size": 339687,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/bfe4060628e17330c311f23d535ed7aaa7caf25b"
+    },
+    {
+      "path": "hydra.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d29198cb2e7cbc92848306459ada3673a1598e7",
+      "size": 510925,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/2d29198cb2e7cbc92848306459ada3673a1598e7"
+    },
+    {
+      "path": "ice-devil.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2cd31d567532809ddd8a61c3db572eacc45c8241",
+      "size": 375905,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/2cd31d567532809ddd8a61c3db572eacc45c8241"
+    },
+    {
+      "path": "imp.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "539ce3a611d58906060d33d3d1c6b159216b2e13",
+      "size": 531177,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/539ce3a611d58906060d33d3d1c6b159216b2e13"
+    },
+    {
+      "path": "incubus.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb051e48e11ab503c3c03d97a79370ae5f877dd4",
+      "size": 593492,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/eb051e48e11ab503c3c03d97a79370ae5f877dd4"
+    },
+    {
+      "path": "intellect-devourer.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dccd4d37ba9a60a8c1a64fcab028604c31c64f09",
+      "size": 334841,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/dccd4d37ba9a60a8c1a64fcab028604c31c64f09"
+    },
+    {
+      "path": "invisible-stalker.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8449e084a479c5619bee9e1a96f9179c38721d7a",
+      "size": 518804,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/8449e084a479c5619bee9e1a96f9179c38721d7a"
+    },
+    {
+      "path": "jackalwere.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5995710e0bf8a7a9f895e0b48ab64596c3a532bb",
+      "size": 313015,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/5995710e0bf8a7a9f895e0b48ab64596c3a532bb"
+    },
+    {
+      "path": "kenku.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "227793ea91d0cab7c732c4ab20ecf1101bcf3576",
+      "size": 301527,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/227793ea91d0cab7c732c4ab20ecf1101bcf3576"
+    },
+    {
+      "path": "kobold-chief.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6309d4bf87d2fb26611a4e2050a07ad3331370ea",
+      "size": 398073,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/6309d4bf87d2fb26611a4e2050a07ad3331370ea"
+    },
+    {
+      "path": "kobold.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2d0bc9e452a6c590125ff0b4e55b4269f05b903",
+      "size": 348492,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/a2d0bc9e452a6c590125ff0b4e55b4269f05b903"
+    },
+    {
+      "path": "kraken.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ff81c620d2f8c71e96def9b20fb9ccac094ce3d",
+      "size": 383027,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/0ff81c620d2f8c71e96def9b20fb9ccac094ce3d"
+    },
+    {
+      "path": "kuo-toa.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56863b4a58044eeff30ab070694a8f6c3e7eb0fc",
+      "size": 371726,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/56863b4a58044eeff30ab070694a8f6c3e7eb0fc"
+    },
+    {
+      "path": "lamia.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ac714417ed15b35e8f199c97fbdd54b5bbe88ec",
+      "size": 427913,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/8ac714417ed15b35e8f199c97fbdd54b5bbe88ec"
+    },
+    {
+      "path": "lemure.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca998de92c5178b26d593f355858124435f59075",
+      "size": 344329,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/ca998de92c5178b26d593f355858124435f59075"
+    },
+    {
+      "path": "lich.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d87687df2d4ee14dd155de87a3232fdc54ed5f7b",
+      "size": 420293,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/d87687df2d4ee14dd155de87a3232fdc54ed5f7b"
+    },
+    {
+      "path": "lizardfolk-shaman.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6dc6ef9744f3f8a465e3af6c5e1357d4471bb19d",
+      "size": 388526,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/6dc6ef9744f3f8a465e3af6c5e1357d4471bb19d"
+    },
+    {
+      "path": "lizardfolk.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11ba9380a2d085a0122c0521cffe722022c182b5",
+      "size": 452843,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/11ba9380a2d085a0122c0521cffe722022c182b5"
+    },
+    {
+      "path": "magmin.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5efd1a72aae95f01fce6384eb5a9edc5068e8f33",
+      "size": 391756,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/5efd1a72aae95f01fce6384eb5a9edc5068e8f33"
+    },
+    {
+      "path": "manes.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f0eb15f28a8d83af73e0e53c13c0d8504088fd7f",
+      "size": 476124,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/f0eb15f28a8d83af73e0e53c13c0d8504088fd7f"
+    },
+    {
+      "path": "manticore.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b246a4556e91286a910851600f1bbad467c1bee5",
+      "size": 305044,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/b246a4556e91286a910851600f1bbad467c1bee5"
+    },
+    {
+      "path": "maralith.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01fec8ce44abf395035c26e7a06471454f3ecf5c",
+      "size": 512075,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/01fec8ce44abf395035c26e7a06471454f3ecf5c"
+    },
+    {
+      "path": "marid.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ead49c17cf09ad0721812f1f02a9f2bbd514dab",
+      "size": 443113,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/4ead49c17cf09ad0721812f1f02a9f2bbd514dab"
+    },
+    {
+      "path": "medusa.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b6dd7e1aab1529533648b01c2bba945c1e397c4",
+      "size": 290301,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/8b6dd7e1aab1529533648b01c2bba945c1e397c4"
+    },
+    {
+      "path": "mephit.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c9f1b52c0bfd274a86269641e25d536789588a7",
+      "size": 472232,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/1c9f1b52c0bfd274a86269641e25d536789588a7"
+    },
+    {
+      "path": "merfolk.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0cfd8a61d28b7d30cf3ca5e83a018eebf93622b4",
+      "size": 377765,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/0cfd8a61d28b7d30cf3ca5e83a018eebf93622b4"
+    },
+    {
+      "path": "merrow.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b5f34507df81636660d8e03d8b9048361668256",
+      "size": 352672,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/7b5f34507df81636660d8e03d8b9048361668256"
+    },
+    {
+      "path": "mezzoloth.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3527174c1225973e063e34e939fce5303bb3fbf3",
+      "size": 236546,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/3527174c1225973e063e34e939fce5303bb3fbf3"
+    },
+    {
+      "path": "mindflayer.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2d90b0cafe7ed7959e9f7ebb5dd5a05f79dda36",
+      "size": 528790,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/f2d90b0cafe7ed7959e9f7ebb5dd5a05f79dda36"
+    },
+    {
+      "path": "minotaur.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b16202bff016c9071229308417414708ba45de8",
+      "size": 332856,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/8b16202bff016c9071229308417414708ba45de8"
+    },
+    {
+      "path": "monodrone.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9bcf77c4bab42b281a449fd5a485e317c00e4691",
+      "size": 347208,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/9bcf77c4bab42b281a449fd5a485e317c00e4691"
+    },
+    {
+      "path": "mummy-lord.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73feb8d271355c7d4d846fdc8fac6af2c4ad5548",
+      "size": 299710,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/73feb8d271355c7d4d846fdc8fac6af2c4ad5548"
+    },
+    {
+      "path": "mummy.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14d3172f258d86bee61f380bba01f73db34394fc",
+      "size": 298167,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/14d3172f258d86bee61f380bba01f73db34394fc"
+    },
+    {
+      "path": "myconid-adult.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "284526b6395b7c8ed1175145d700fd80cdfaa577",
+      "size": 369020,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/284526b6395b7c8ed1175145d700fd80cdfaa577"
+    },
+    {
+      "path": "myconid-behemoth.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35e4c7ce4bd87b3ec3215601e0d2cc95192469b3",
+      "size": 349125,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/35e4c7ce4bd87b3ec3215601e0d2cc95192469b3"
+    },
+    {
+      "path": "myconid-commoner.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7acdf999aaee14f769f009d7a1548d6c4362dabb",
+      "size": 354872,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/7acdf999aaee14f769f009d7a1548d6c4362dabb"
+    },
+    {
+      "path": "myconid-sovereign.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16d87c70b6763c7de520f51d34abe4f0e290d776",
+      "size": 328602,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/16d87c70b6763c7de520f51d34abe4f0e290d776"
+    },
+    {
+      "path": "myconid-sprout.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f478c8a54299849b19d35181ef1dd2221f069ef",
+      "size": 589974,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/2f478c8a54299849b19d35181ef1dd2221f069ef"
+    },
+    {
+      "path": "nalfeshnee.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ffebe8a319b073193aee4952247bfc85c1264cd",
+      "size": 503480,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/9ffebe8a319b073193aee4952247bfc85c1264cd"
+    },
+    {
+      "path": "needle-blight.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7018c70ac73e05d030f953926e8f837c539f400b",
+      "size": 281389,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/7018c70ac73e05d030f953926e8f837c539f400b"
+    },
+    {
+      "path": "night-hag.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "439b3be028795443362706aec0e2ffb0f4d0f5a6",
+      "size": 428599,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/439b3be028795443362706aec0e2ffb0f4d0f5a6"
+    },
+    {
+      "path": "nightmare.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99a17973953df279a39a759d626a9fbc56c9eead",
+      "size": 347514,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/99a17973953df279a39a759d626a9fbc56c9eead"
+    },
+    {
+      "path": "nonaton.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a76820d4e0953cf6fb2c7faacfcdc76fc343a109",
+      "size": 372334,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/a76820d4e0953cf6fb2c7faacfcdc76fc343a109"
+    },
+    {
+      "path": "nothic.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7cab1800290d86a1b4c3207ca98d1fb70f405aab",
+      "size": 409081,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/7cab1800290d86a1b4c3207ca98d1fb70f405aab"
+    },
+    {
+      "path": "nycaloth.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ea0ab852d0fc236111544ba0ad5e61ea8717447",
+      "size": 383910,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/4ea0ab852d0fc236111544ba0ad5e61ea8717447"
+    },
+    {
+      "path": "oche-jelly.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2d071633c9209486d5987605ae840f087cca0a8",
+      "size": 347380,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/e2d071633c9209486d5987605ae840f087cca0a8"
+    },
+    {
+      "path": "ogre.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "535183f4dccaf5c03c7686653426f702d7b0516b",
+      "size": 495329,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/535183f4dccaf5c03c7686653426f702d7b0516b"
+    },
+    {
+      "path": "oni.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b20fe08fd80a9dde2154d9234187d5067fca9d82",
+      "size": 543353,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/b20fe08fd80a9dde2154d9234187d5067fca9d82"
+    },
+    {
+      "path": "orc-eye-of-gruumsh.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d70cdd296ea957dde42994ff439f0a6e94ea5392",
+      "size": 408458,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/d70cdd296ea957dde42994ff439f0a6e94ea5392"
+    },
+    {
+      "path": "orc-war-chief.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8179b99f606d7ae47a54ff9d1d50b1d865d8eb57",
+      "size": 560804,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/8179b99f606d7ae47a54ff9d1d50b1d865d8eb57"
+    },
+    {
+      "path": "orc.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8d3ebae71e0f9f0fc4e502c7ea9b6fae2a102fb",
+      "size": 525957,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/d8d3ebae71e0f9f0fc4e502c7ea9b6fae2a102fb"
+    },
+    {
+      "path": "orog.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8de4b29eb3225fd72add7aaf2f12a70c9dbc606",
+      "size": 370929,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/a8de4b29eb3225fd72add7aaf2f12a70c9dbc606"
+    },
+    {
+      "path": "otyugh.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7753ae15aef30747f50eb47f7530135e052c5f19",
+      "size": 400874,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/7753ae15aef30747f50eb47f7530135e052c5f19"
+    },
+    {
+      "path": "owlbear.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3257d6a56f1caf86ae45ed4a29222285b34e69b",
+      "size": 424980,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/c3257d6a56f1caf86ae45ed4a29222285b34e69b"
+    },
+    {
+      "path": "pentadrone.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba1e074706485329192d1487cbbe13262a0ec21d",
+      "size": 383665,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/ba1e074706485329192d1487cbbe13262a0ec21d"
+    },
+    {
+      "path": "peryton.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2292710946bccea84081c56e7fd53dfdea623b4c",
+      "size": 413919,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/2292710946bccea84081c56e7fd53dfdea623b4c"
+    },
+    {
+      "path": "piercer.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10d72698d57c2933b8479bf33d294395c8dcd68f",
+      "size": 355434,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/10d72698d57c2933b8479bf33d294395c8dcd68f"
+    },
+    {
+      "path": "pit-fiend.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71e8a439634c569343bb6c17888ce214aa682c34",
+      "size": 472988,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/71e8a439634c569343bb6c17888ce214aa682c34"
+    },
+    {
+      "path": "pixie.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88545c761740c514ddc278038978affe6764c308",
+      "size": 703445,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/88545c761740c514ddc278038978affe6764c308"
+    },
+    {
+      "path": "planetar.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d96c435e2f69685b04dec773a23a77b64eee5a4e",
+      "size": 397615,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/d96c435e2f69685b04dec773a23a77b64eee5a4e"
+    },
+    {
+      "path": "plesiosaurus.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1f36f5163ee76665ea69b01ac09c05888aaf770",
+      "size": 119853,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/a1f36f5163ee76665ea69b01ac09c05888aaf770"
+    },
+    {
+      "path": "pseudodragon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b69be52822f25a202bb5af2af92a7d92e3a0c80",
+      "size": 422218,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/0b69be52822f25a202bb5af2af92a7d92e3a0c80"
+    },
+    {
+      "path": "pteranodon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf4ab35065aed3e94a6aea9de0a34f6739615795",
+      "size": 135411,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/bf4ab35065aed3e94a6aea9de0a34f6739615795"
+    },
+    {
+      "path": "purple-worm.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4535360603f75e5c240da2114b32eb3c167a511",
+      "size": 410125,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/d4535360603f75e5c240da2114b32eb3c167a511"
+    },
+    {
+      "path": "quadrone.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2346387f334e8bb5116ec02b0c30252297407a23",
+      "size": 320091,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/2346387f334e8bb5116ec02b0c30252297407a23"
+    },
+    {
+      "path": "quaggoth.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2711e412f761919506512f0c346f2a3d99ca50c",
+      "size": 462873,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/e2711e412f761919506512f0c346f2a3d99ca50c"
+    },
+    {
+      "path": "quasit.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8c8336e6383d1256e749cfe6237666a2f1b3689",
+      "size": 365838,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/e8c8336e6383d1256e749cfe6237666a2f1b3689"
+    },
+    {
+      "path": "rakshasa-lich.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7fd00c8069c43a687ae7902d0309e47e16ae23d",
+      "size": 381102,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/f7fd00c8069c43a687ae7902d0309e47e16ae23d"
+    },
+    {
+      "path": "rakshasa.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f996da8c503360ff54923970c85d82e9f6737bd3",
+      "size": 449171,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/f996da8c503360ff54923970c85d82e9f6737bd3"
+    },
+    {
+      "path": "rat-king.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64f6769a7ba5a84d9257f6667e08f95d7bd6c9e4",
+      "size": 462202,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/64f6769a7ba5a84d9257f6667e08f95d7bd6c9e4"
+    },
+    {
+      "path": "red-dragon-adult.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78918037231028b91c16b365f503dd92c632c76b",
+      "size": 363437,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/78918037231028b91c16b365f503dd92c632c76b"
+    },
+    {
+      "path": "red-dragon-ancient.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0dfa9b83c557c665c640cc777f40a1791fd570e",
+      "size": 498676,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/e0dfa9b83c557c665c640cc777f40a1791fd570e"
+    },
+    {
+      "path": "red-dragon-wyrmling.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c1cd3cc2fb5f8a4c0a55da5e3bdb38e7aa7013c",
+      "size": 487480,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/1c1cd3cc2fb5f8a4c0a55da5e3bdb38e7aa7013c"
+    },
+    {
+      "path": "red-dragon-young.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe2dcf332eeb5a8fb02152e590aa75c3e498afb2",
+      "size": 286158,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/fe2dcf332eeb5a8fb02152e590aa75c3e498afb2"
+    },
+    {
+      "path": "red-half-dragon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "946df6f41d337ec3342779a75a6ec206b6153e44",
+      "size": 323526,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/946df6f41d337ec3342779a75a6ec206b6153e44"
+    },
+    {
+      "path": "red-slaad.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c9d359d9c0f7bbcb420575ddbe163a148294fe9",
+      "size": 425203,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/0c9d359d9c0f7bbcb420575ddbe163a148294fe9"
+    },
+    {
+      "path": "remorhaz.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2f17f94d3d378fa801dc371bc0c02c190c09cad",
+      "size": 455797,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/f2f17f94d3d378fa801dc371bc0c02c190c09cad"
+    },
+    {
+      "path": "revenant.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4446b03315a03a03208d8cedd16bce0ec00c2947",
+      "size": 449694,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/4446b03315a03a03208d8cedd16bce0ec00c2947"
+    },
+    {
+      "path": "roc.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f4bd766e10d1d5f5c388f526d6f34575f984500",
+      "size": 133290,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/7f4bd766e10d1d5f5c388f526d6f34575f984500"
+    },
+    {
+      "path": "roper.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7af7687b2ad01d2adc5dfd378dfc5f48f23a1d58",
+      "size": 378981,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/7af7687b2ad01d2adc5dfd378dfc5f48f23a1d58"
+    },
+    {
+      "path": "rug-of-smothering.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ebd2363733af292c61812569f82d7ae61eabf82c",
+      "size": 345279,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/ebd2363733af292c61812569f82d7ae61eabf82c"
+    },
+    {
+      "path": "rust-monster.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1df64dbf0746a9af2b3a64019a92310c39759fce",
+      "size": 382619,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/1df64dbf0746a9af2b3a64019a92310c39759fce"
+    },
+    {
+      "path": "sahuagin-baron.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e999eb77005ac03d3b9297029fbeef29a02d2f5e",
+      "size": 312238,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/e999eb77005ac03d3b9297029fbeef29a02d2f5e"
+    },
+    {
+      "path": "sahuagin-priestess.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28a85bb82bd0d439d73e0f577be9e861be44be11",
+      "size": 363145,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/28a85bb82bd0d439d73e0f577be9e861be44be11"
+    },
+    {
+      "path": "sahuagin.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f5cc2ff6eb7d43a034297d911b483c5234d431a",
+      "size": 333963,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/8f5cc2ff6eb7d43a034297d911b483c5234d431a"
+    },
+    {
+      "path": "salamander.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ce63b83dc1e1690b0c0694faa98a249f316a46f",
+      "size": 294356,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/7ce63b83dc1e1690b0c0694faa98a249f316a46f"
+    },
+    {
+      "path": "satyr.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6af516d2555dedfa56d4ee2ee0a7e380a537cc2f",
+      "size": 334480,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/6af516d2555dedfa56d4ee2ee0a7e380a537cc2f"
+    },
+    {
+      "path": "scarecrow.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65a3496f6b9d04465e5d0d61e67504cf03f86656",
+      "size": 373446,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/65a3496f6b9d04465e5d0d61e67504cf03f86656"
+    },
+    {
+      "path": "shadow-demon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f4943ffb98250bb44c8e52b7816135b5d23cffa",
+      "size": 607277,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/7f4943ffb98250bb44c8e52b7816135b5d23cffa"
+    },
+    {
+      "path": "shadow.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfe7575919199340c6188c854173e5d5f4da35fc",
+      "size": 560116,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/cfe7575919199340c6188c854173e5d5f4da35fc"
+    },
+    {
+      "path": "shambling-mound.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65b09a4539c8b95e8854b306e3a0a417073ddcad",
+      "size": 404754,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/65b09a4539c8b95e8854b306e3a0a417073ddcad"
+    },
+    {
+      "path": "shield-guardian.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c20a1167e1dcd46b7cbb8d2a782975624911caf",
+      "size": 446565,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/8c20a1167e1dcd46b7cbb8d2a782975624911caf"
+    },
+    {
+      "path": "silver-dragon-wyrmling.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fffd52a01ed4e94f736c11b79cd9573e5d9353af",
+      "size": 396901,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/fffd52a01ed4e94f736c11b79cd9573e5d9353af"
+    },
+    {
+      "path": "skeleton-minotaur.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5dfa49d859a0e63b7833fe6999607100e63857a2",
+      "size": 267536,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/5dfa49d859a0e63b7833fe6999607100e63857a2"
+    },
+    {
+      "path": "skeleton-warhorse.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a82a9dc2d1ee99da6c81bd52809351499263f865",
+      "size": 420999,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/a82a9dc2d1ee99da6c81bd52809351499263f865"
+    },
+    {
+      "path": "skeleton.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd4f58ccb6fc2e5d3ded118af7d0b7529a7fb425",
+      "size": 309800,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/fd4f58ccb6fc2e5d3ded118af7d0b7529a7fb425"
+    },
+    {
+      "path": "slaad-tadpole.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd1aa57860e52411b483724c436ec8cf8ca6f1ad",
+      "size": 590340,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/fd1aa57860e52411b483724c436ec8cf8ca6f1ad"
+    },
+    {
+      "path": "solar.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59165b6f9b22e2cea57f19171ef532a45db8d96b",
+      "size": 275714,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/59165b6f9b22e2cea57f19171ef532a45db8d96b"
+    },
+    {
+      "path": "specter.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd38302b60161536a909cd4443a7e58090a9d46f",
+      "size": 306504,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/dd38302b60161536a909cd4443a7e58090a9d46f"
+    },
+    {
+      "path": "spined-devil.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68446f6084df7d526e386abd02325b180ff6babc",
+      "size": 455634,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/68446f6084df7d526e386abd02325b180ff6babc"
+    },
+    {
+      "path": "spirit-naga.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a90f9fae0a902088469149fbebd53de02d554346",
+      "size": 516437,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/a90f9fae0a902088469149fbebd53de02d554346"
+    },
+    {
+      "path": "sprite.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1589b73cc57c0b668a70d66fe1e7d6cc096ba351",
+      "size": 348752,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/1589b73cc57c0b668a70d66fe1e7d6cc096ba351"
+    },
+    {
+      "path": "stirge.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8eddd7c94d161b6d4c892576e3c203cbbd502e1",
+      "size": 547511,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/f8eddd7c94d161b6d4c892576e3c203cbbd502e1"
+    },
+    {
+      "path": "stone-giant.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f58501fcf287dbd2e86f671479ebc82998908ad",
+      "size": 347970,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/9f58501fcf287dbd2e86f671479ebc82998908ad"
+    },
+    {
+      "path": "stone-giantblend.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98f904295482976d5fa7b6f6dec76a537e949199",
+      "size": 282251,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/98f904295482976d5fa7b6f6dec76a537e949199"
+    },
+    {
+      "path": "stone-golem.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02058cde674759ebbe293787b297cd54ed5b2dea",
+      "size": 345016,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/02058cde674759ebbe293787b297cd54ed5b2dea"
+    },
+    {
+      "path": "storm-giant-female.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53dde6b5430fe65b7be58a67e64652cb8b26abe4",
+      "size": 334434,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/53dde6b5430fe65b7be58a67e64652cb8b26abe4"
+    },
+    {
+      "path": "succubus.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d71abb94cc6c001c132c0be500445b9581b3f6cc",
+      "size": 599192,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/d71abb94cc6c001c132c0be500445b9581b3f6cc"
+    },
+    {
+      "path": "tarrasque.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc7b38564dafbb782a502964bd11fb483396d2a5",
+      "size": 448432,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/cc7b38564dafbb782a502964bd11fb483396d2a5"
+    },
+    {
+      "path": "thri-kreen.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1002dc6995bbaae6c8a1b9bbc0a70debd0651b3e",
+      "size": 243252,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/1002dc6995bbaae6c8a1b9bbc0a70debd0651b3e"
+    },
+    {
+      "path": "tiamat.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "139bb9ff01fea0cd1bb3603394b50af7ee1b7468",
+      "size": 623135,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/139bb9ff01fea0cd1bb3603394b50af7ee1b7468"
+    },
+    {
+      "path": "triceratops.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b9bf210b35b3e309c4eec0da6d9226e14fec0e4",
+      "size": 396913,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/2b9bf210b35b3e309c4eec0da6d9226e14fec0e4"
+    },
+    {
+      "path": "tridrone.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea407e62c6398dfce168438d7bf6521248922189",
+      "size": 324746,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/ea407e62c6398dfce168438d7bf6521248922189"
+    },
+    {
+      "path": "troglodyte.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ce33b1a37125b7247a988d59853d7045f5d7730",
+      "size": 352679,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/1ce33b1a37125b7247a988d59853d7045f5d7730"
+    },
+    {
+      "path": "troll.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a3b0fa807f6e6b084f07b32a6d1df3c79f4b7e3",
+      "size": 335483,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/1a3b0fa807f6e6b084f07b32a6d1df3c79f4b7e3"
+    },
+    {
+      "path": "twig-blight.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d73f1a0df8ed0c3830011a78c6251b5e0876c23b",
+      "size": 358630,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/d73f1a0df8ed0c3830011a78c6251b5e0876c23b"
+    },
+    {
+      "path": "tyrannosaurus-rex.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b3ef9a2485f9c8c8ec961b0bcc596f0e72db4bf",
+      "size": 377694,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/5b3ef9a2485f9c8c8ec961b0bcc596f0e72db4bf"
+    },
+    {
+      "path": "ultroloth.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1673de5ee77b63bba6af21bff536037262e3db0",
+      "size": 337845,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/d1673de5ee77b63bba6af21bff536037262e3db0"
+    },
+    {
+      "path": "umber-hulk.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3a4a754ca190c3374590f71b88d20d3db325226",
+      "size": 391993,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/c3a4a754ca190c3374590f71b88d20d3db325226"
+    },
+    {
+      "path": "undead-dragon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61bd2960ba0cf5fe3995efe84250d1f681911dcb",
+      "size": 311466,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/61bd2960ba0cf5fe3995efe84250d1f681911dcb"
+    },
+    {
+      "path": "unicorn.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f36a9e6bd1a32e780a2d50956db5b3a3ed86ebf",
+      "size": 255227,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/3f36a9e6bd1a32e780a2d50956db5b3a3ed86ebf"
+    },
+    {
+      "path": "vampire-spawn-male.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf31978d7093c215c23fa78f965c8efc5c660c3d",
+      "size": 290046,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/cf31978d7093c215c23fa78f965c8efc5c660c3d"
+    },
+    {
+      "path": "vampire-spawn-noblewoman.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "999c4f27fbf31f8e17465747354c4197cc71a0b6",
+      "size": 340796,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/999c4f27fbf31f8e17465747354c4197cc71a0b6"
+    },
+    {
+      "path": "vampire-spawn.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ca507bb91854374e34aef802d217e60a3921110",
+      "size": 268507,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/6ca507bb91854374e34aef802d217e60a3921110"
+    },
+    {
+      "path": "vampire.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3d1641e00e29395bb5344037e89d1e7720cd1ed",
+      "size": 488340,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/d3d1641e00e29395bb5344037e89d1e7720cd1ed"
+    },
+    {
+      "path": "vine-blight.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0fe9e51c8940d796443ba604e0d88dc4433466cd",
+      "size": 428940,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/0fe9e51c8940d796443ba604e0d88dc4433466cd"
+    },
+    {
+      "path": "vrock.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe80dcd6f316a742884b48819cfe86689b2bf1a9",
+      "size": 416623,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/fe80dcd6f316a742884b48819cfe86689b2bf1a9"
+    },
+    {
+      "path": "water-elemental.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6237001700370a93f99f61c90a1973ea18bb9b80",
+      "size": 421824,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/6237001700370a93f99f61c90a1973ea18bb9b80"
+    },
+    {
+      "path": "water-weird.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa603b92f329be5d273db1fdbe46089ac5037c12",
+      "size": 230907,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/aa603b92f329be5d273db1fdbe46089ac5037c12"
+    },
+    {
+      "path": "wearboar.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "285baa86a55ebad1267beb8cdddfa49695f874ba",
+      "size": 483646,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/285baa86a55ebad1267beb8cdddfa49695f874ba"
+    },
+    {
+      "path": "werebear.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd30a5c7f2e5f67a93128cc1625e8f42e960ef1e",
+      "size": 504056,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/dd30a5c7f2e5f67a93128cc1625e8f42e960ef1e"
+    },
+    {
+      "path": "wererat.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aba7738b6c06aab563463d79af38c4a407b5a57d",
+      "size": 438005,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/aba7738b6c06aab563463d79af38c4a407b5a57d"
+    },
+    {
+      "path": "wereshark.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c9029b794019b0db06aa18cadd14ff3a506a6e3",
+      "size": 451691,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/2c9029b794019b0db06aa18cadd14ff3a506a6e3"
+    },
+    {
+      "path": "weretiger.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae29ff87b74e9279bc940488be24677855d98a13",
+      "size": 407793,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/ae29ff87b74e9279bc940488be24677855d98a13"
+    },
+    {
+      "path": "werewolf.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e306058c432f09468a07c9a2ac3250bd4d5bb52b",
+      "size": 539072,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/e306058c432f09468a07c9a2ac3250bd4d5bb52b"
+    },
+    {
+      "path": "white-dragon-adult.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a9e47c1b0d05ef883e944f83933761ae0cb8215",
+      "size": 467795,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/2a9e47c1b0d05ef883e944f83933761ae0cb8215"
+    },
+    {
+      "path": "white-dragon-ancient.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3fbae74a3bd62abfbec0bbbd6a96382e6a8a956",
+      "size": 338216,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/d3fbae74a3bd62abfbec0bbbd6a96382e6a8a956"
+    },
+    {
+      "path": "white-dragon-wyrmling.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93020c3ad79781d04efc132af1dadf1fe95bfe3f",
+      "size": 251161,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/93020c3ad79781d04efc132af1dadf1fe95bfe3f"
+    },
+    {
+      "path": "white-dragon-young.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0538026acce3e65910d468558b9062479248b940",
+      "size": 342496,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/0538026acce3e65910d468558b9062479248b940"
+    },
+    {
+      "path": "wight.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "678a99a9a78d156938359fcf28e6830afc11f673",
+      "size": 289143,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/678a99a9a78d156938359fcf28e6830afc11f673"
+    },
+    {
+      "path": "will-o-wisp.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e07a051fcc24996203554f4fc914ba4aed2e306",
+      "size": 374807,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/2e07a051fcc24996203554f4fc914ba4aed2e306"
+    },
+    {
+      "path": "winged-kobold.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a19cbe64187ffc2a0e4c025a92b1ca8e60b9ed0",
+      "size": 433434,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/9a19cbe64187ffc2a0e4c025a92b1ca8e60b9ed0"
+    },
+    {
+      "path": "wraith.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ac2eea21e38693b1df7556125318da1c8ccb472",
+      "size": 367131,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/3ac2eea21e38693b1df7556125318da1c8ccb472"
+    },
+    {
+      "path": "wyvern.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "152cff25d03b8c248268dead8b8f1db45fe4b804",
+      "size": 423913,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/152cff25d03b8c248268dead8b8f1db45fe4b804"
+    },
+    {
+      "path": "xorn.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0fea6d61d480dca907802c4ee8b3059780684cdc",
+      "size": 465236,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/0fea6d61d480dca907802c4ee8b3059780684cdc"
+    },
+    {
+      "path": "yeti.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10401222a50980864841211ffde772bec2ba7caa",
+      "size": 419755,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/10401222a50980864841211ffde772bec2ba7caa"
+    },
+    {
+      "path": "yochlol.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b51610c79708a1a2ae1d5cd1f33062a7877e1216",
+      "size": 404556,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/b51610c79708a1a2ae1d5cd1f33062a7877e1216"
+    },
+    {
+      "path": "young-brass-dragon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "076b78862a9946c296818f480ff88742c944fabb",
+      "size": 408673,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/076b78862a9946c296818f480ff88742c944fabb"
+    },
+    {
+      "path": "young-bronze-dragon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40e11f61a9e0a25a13279b6bdc55de9b1b0450e1",
+      "size": 384631,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/40e11f61a9e0a25a13279b6bdc55de9b1b0450e1"
+    },
+    {
+      "path": "young-copper-dragon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1322236755a1e0d3d41e8097fa1258353ac65ea",
+      "size": 400281,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/f1322236755a1e0d3d41e8097fa1258353ac65ea"
+    },
+    {
+      "path": "young-gold-dragon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b77bb68c5f7b8e65a0b86799bd0fb97952dc8fb8",
+      "size": 447720,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/b77bb68c5f7b8e65a0b86799bd0fb97952dc8fb8"
+    },
+    {
+      "path": "young-silver-dragon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e11ca823a1a32ca974a4756f8f0bdf77c9e75fb",
+      "size": 464657,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/8e11ca823a1a32ca974a4756f8f0bdf77c9e75fb"
+    },
+    {
+      "path": "yuan-ti-abomination.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b907d6721a6a9595802670faaf3e4f9e05435f21",
+      "size": 530445,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/b907d6721a6a9595802670faaf3e4f9e05435f21"
+    },
+    {
+      "path": "yuan-ti-malison.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2bb619ffd584ffd00281c86e02728ef634bebcaa",
+      "size": 317594,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/2bb619ffd584ffd00281c86e02728ef634bebcaa"
+    },
+    {
+      "path": "yuan-ti-pureblood.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc2db70287f1d02d2c8c8ea6c01482af9948c675",
+      "size": 314361,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/cc2db70287f1d02d2c8c8ea6c01482af9948c675"
+    },
+    {
+      "path": "zombie-beholder.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ae8f0c5ba6c16330f8da0160eafb51e0973f079",
+      "size": 524306,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/6ae8f0c5ba6c16330f8da0160eafb51e0973f079"
+    },
+    {
+      "path": "zombie-male.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f10be581c968fd2452cc97820d98e835f669d24",
+      "size": 242862,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/7f10be581c968fd2452cc97820d98e835f669d24"
+    },
+    {
+      "path": "zombie-ogre.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae746cb1fb0c3ebe094450cd151f75f86442786f",
+      "size": 277085,
+      "url": "https://api.github.com/repos/Sturlen/open5e-api/git/blobs/ae746cb1fb0c3ebe094450cd151f75f86442786f"
+    }
+  ],
+  "truncated": false
+}

@@ -1,0 +1,41 @@
+---
+export interface Props {
+    data: Record<string, any>
+}
+
+const { data } = Astro.props
+
+function serialize(prop: any): string {
+    switch (typeof prop) {
+        case "undefined":
+            return ""
+        case "boolean":
+            return prop ? "Yes" : "No"
+        case "object":
+            if (Array.isArray(prop)) {
+                return prop.map(serialize).join()
+            } else {
+                return (
+                    prop &&
+                    Object.keys(prop)
+                        .map((key) => key + ": " + serialize(prop[key]))
+                        .join()
+                )
+            }
+
+        default:
+            return `${prop}`
+    }
+}
+---
+
+{
+    Object.keys(data)
+        .filter((key) => data[key] != null || data[key] !== "")
+        .map((key) => (
+            <p>
+                <strong style="text-transform: capitalize;">{key}</strong>
+                <span>{serialize(data[key])}</span>
+            </p>
+        ))
+}

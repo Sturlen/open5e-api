@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/Layout.astro"
+import { Class5eSchema } from "../api/class"
+const modules = [...(await Astro.glob("/src/api/classes.json"))] as [
+    { default: any[] }
+]
+const ClassData = modules[0].default.map((raw) => Class5eSchema.parse(raw))
+---
+
+<Layout title="Classes">
+    <main>
+        <h1>Classes</h1>
+        <ul role="list" class="link-card-grid">
+            {
+                ClassData.map((class5e) => (
+                    <li class="card">
+                        <span class="title">
+                            <a href={`/classes/${class5e.slug}`}>
+                                <strong>{class5e.name}</strong>
+                            </a>
+
+                            <span class="source">{class5e.document__slug}</span>
+                        </span>
+                    </li>
+                ))
+            }
+        </ul>
+    </main>
+</Layout>

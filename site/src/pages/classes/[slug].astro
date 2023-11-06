@@ -1,0 +1,65 @@
+---
+import { type Class5e, Class5eSchema } from "../../api/class"
+import Stats from "../../components/Stats.astro"
+import Layout from "../../layouts/Layout.astro"
+import { marked } from "marked"
+
+interface Props {
+    spell: Class5e
+}
+
+export async function getStaticPaths() {
+    const modules = [...(await Astro.glob("/src/api/classes.json"))] as [
+        { default: any[] }
+    ]
+
+    return modules[0].default
+        .map((raw) => Class5eSchema.parse(raw))
+        .map((spell) => ({
+            params: { slug: spell.slug },
+            props: { spell },
+        }))
+}
+
+const { spell } = Astro.props
+
+const { name, desc, table, archetypes, ...other } = spell
+
+const data: Record<string, any> = other
+---
+
+<Layout title={name} description={desc}>
+    <main>
+        <h1>
+            {name}
+        </h1>
+        <p>
+            <span
+                set:html={marked.parse(
+                    desc.replaceAll("\n", "\n\n"), // markdown require two newlines to split blocks.
+                    {
+                        headerIds: false,
+                        mangle: false,
+                    }
+                )}
+            />
+        </p>
+        <h2>Advancement</h2>
+        <span
+            set:html={marked.parse(
+                table, // markdown require two newlines to split blocks.
+                {
+                    headerIds: false,
+                    mangle: false,
+                }
+            )}
+        />
+        <h2>Archetypes</h2>
+        {archetypes.map((arch) => <Stats data={arch} />)}
+        <!-- TODO: Fix markdown rendering -->
+        <hr />
+        <Stats data={data} />
+
+        <style></style>
+    </main>
+</Layout>

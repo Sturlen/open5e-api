@@ -1,0 +1,10 @@
+---
+interface Props {
+    formula: string
+}
+import DiceField from "./DiceField"
+
+const { formula } = Astro.props
+---
+
+<DiceField formula={formula} client:load />

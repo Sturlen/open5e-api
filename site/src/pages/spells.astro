@@ -1,0 +1,44 @@
+---
+import Layout from "../layouts/Layout.astro"
+import { SpellSchema } from "../api/spell"
+const modules = [...(await Astro.glob("/src/api/spells.json"))] as [
+    { default: any[] }
+]
+const SpellData = modules[0].default.map((raw) => SpellSchema.parse(raw))
+---
+
+<Layout title="Spells">
+    <main>
+        <h1>Spells</h1>
+        <ul role="list" class="link-card-grid">
+            {
+                SpellData.map((spell) => (
+                    <li class="card">
+                        <span class="title">
+                            <a href={`/spells/${spell.slug}`}>
+                                <strong class="name">{spell.name} </strong>
+                            </a>
+                            <i class="school">- {spell.school}</i>
+
+                            <span class="source">{spell.document__slug}</span>
+                        </span>
+                        <p>
+                            <strong>{spell.components}</strong>
+                        </p>
+
+                        <i>{spell.dnd_class}</i>
+                    </li>
+                ))
+            }
+        </ul>
+    </main>
+</Layout>
+<style>
+    .desc {
+        max-lines: 2;
+        line-break: normal;
+    }
+    .school {
+        margin-left: 1ch;
+    }
+</style>

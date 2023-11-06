@@ -1,0 +1,240 @@
+---
+import { marked } from "marked"
+import { type Monster, MonsterSchema, Stat } from "../../api/monster"
+import Layout from "../../layouts/Layout.astro"
+import Stats from "../../components/Stats.astro"
+import DiceField from "../../components/DiceField"
+
+interface Props {
+    monster: Monster
+}
+
+export async function getStaticPaths() {
+    const modules = [...(await Astro.glob("/src/api/monsters.json"))] as [
+        { default: any[] }
+    ]
+
+    return modules[0].default
+        .map((raw) => MonsterSchema.parse(raw))
+        .map(
+            ({ slug, ...rest }): Monster => ({
+                slug: slug.replaceAll(":", "-"),
+                ...rest,
+            })
+        ) //should do this in preprocessing
+        .map((monster) => ({
+            params: { slug: monster.slug },
+            props: { monster },
+        }))
+}
+
+const { monster } = Astro.props
+
+const {
+    challenge_rating,
+    actions,
+    stats,
+    name,
+    img,
+    slug,
+    speed,
+    subtype,
+    armor_class,
+    armor_desc,
+    hit_dice,
+    hit_points,
+    ...data
+} = monster
+
+const desc = `${monster.size ?? ""} ${monster.type ?? "monster"}${
+    subtype ? " (" + subtype + ")" : ""
+}, ${monster.alignment ?? ""} (CR ${challenge_rating})`
+---
+
+<Layout title={monster.name} description={desc} image={img}>
+    <main>
+        <h1>
+            {name}
+        </h1>
+        <em>{desc}</em>
+
+        <hr />
+        {
+            img && (
+                <>
+                    <div class="img-box">
+                        <a href={img} target="_blank">
+                            <img
+                                src={img}
+                                alt={`Illustration of ${name}`}
+                                width="100%"
+                            />
+                        </a>
+                        <caption>Captivating Caption</caption>
+                    </div>
+                    <hr />
+                </>
+            )
+        }
+
+        <p>
+            <strong>Armor Class</strong>
+            <span data-ac>{armor_class} <i>{armor_desc}</i></span>
+        </p>
+        <p>
+            <strong>Hit Points</strong>
+            <span
+                >{hit_points} ({hit_dice})<DiceField
+                    formula={hit_dice}
+                    client:load
+                /></span
+            >
+        </p>
+        <p>
+            <strong>Speed</strong>
+            <span
+                >{
+                    Object.keys(speed)
+                        .map(
+                            (key) =>
+                                `${key === "walk" ? "" : key} ${speed[key]} ft.`
+                        )
+                        .join(", ")
+                }</span
+            >
+        </p>
+        <hr />
+        <div class="stats">
+            {
+                Object.keys(stats).map((key) => (
+                    <div class="stat">
+                        <strong>{key.toUpperCase()}</strong>
+                        <p>{stats[key as Stat]}</p>
+                    </div>
+                ))
+            }
+        </div>
+
+        <hr />
+
+        <p>
+            <strong>Skills</strong>
+            <span>{0}</span>
+        </p>
+        <p>
+            <strong>Senses</strong>
+            <span>{0}</span>
+        </p>
+        <p>
+            <strong>Languages</strong>
+            <span>{0}</span>
+        </p>
+        <p>
+            <strong>Challenge</strong>
+            <span>{challenge_rating}</span>
+        </p>
+
+        <h2>Actions</h2>
+
+        {
+            typeof actions !== "string" &&
+                actions.map((action) => (
+                    <div>
+                        <h3>{action.name}.</h3>
+                        <span
+                            set:html={marked.parse(
+                                action.desc.replaceAll("\n", "\n\n"), // markdown require two newlines to split blocks.
+                                {
+                                    headerIds: false,
+                                    mangle: false,
+                                }
+                            )}
+                        />
+                    </div>
+                ))
+            // should markdown viewer these
+        }
+        <hr />
+        <Stats data={data} />
+        <p>
+            Find the complete stats on: <a
+                href={`https://open5e.com/monsters/${slug}`}
+                target="_blank">Open5e</a
+            >
+        </p>
+        <a href={monster.document__license_url} target="_blank"
+            >{monster.document__title}</a
+        >{monster.page_no && <span>, page no. {monster.page_no}</span>}
+    </main>
+</Layout>
+
+<style>
+    main {
+        margin: auto;
+        padding: 1.5rem;
+        max-width: 80ch;
+    }
+    h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        margin: 0;
+        color: rgb(var(--accent));
+    }
+
+    h2 {
+        border-bottom: 3px solid rgb(218, 98, 98);
+        margin-top: 2rem;
+        padding-bottom: 0.25rem;
+    }
+
+    h3 {
+        border-bottom: 1px solid black;
+        margin-top: 1rem;
+        padding-bottom: 0.1rem;
+    }
+
+    .text-gradient {
+        background-image: var(--accent-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 400%;
+        background-position: 0%;
+    }
+    .instructions {
+        line-height: 1.6;
+        margin: 1rem 0;
+        border: 1px solid rgba(var(--accent), 25%);
+        background-color: white;
+        padding: 1rem;
+        border-radius: 0.4rem;
+    }
+    .link-card-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0;
+    }
+
+    .stats {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        gap: 1rem;
+    }
+    .stat {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-box a {
+        width: 60%;
+    }
+</style>
