@@ -85,10 +85,10 @@ export const MonsterSchema = z
         page_no: z.number().nullish(),
 
         img: z.string().optional(),
-        document__license_url: z.string().default(""),
-        document__slug: z.string().default(""),
-        document__title: z.string().default(""),
-        document__url: z.string().default(""),
+        document__license_url: z.string(),
+        document__slug: z.string(),
+        document__title: z.string(),
+        document__url: z.string(),
     })
     .transform((m) => {
         const {

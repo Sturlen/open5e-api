@@ -23,12 +23,13 @@ export default defineConfig({
         if (!dir.includes("document.json")) {
           return
         }
-        console.log("document ",dirname)
-        const document = JSON.parse(readFileSync(path.join(data_path, dirname, "document.json"), {encoding: "utf-8"}))
+        
+        const document = JSON.parse(readFileSync(path.join(data_path, dirname, "document.json"), {encoding: "utf-8"}))[0]
         const document__license_url = document.license_url || document.url
         const document__slug = document.slug
         const document__title = document.title
         const document__url = document.url
+        console.log("document", document__title)
 
         if (dir.includes("monsters.json")) {
           

@@ -15,7 +15,14 @@ export async function getStaticPaths() {
     ]
 
     return modules[0].default
-        .map((raw) => MonsterSchema.parse(raw))
+        .map((raw) => {
+            const result = MonsterSchema.safeParse(raw)
+
+            if (!result.success) {
+                throw new Error(raw?.name + "\n" + result.error.message)
+            }
+            return result.data
+        })
         .map(
             ({ slug, ...rest }): Monster => ({
                 slug: slug.replaceAll(":", "-"),
