@@ -3,8 +3,10 @@
     "type": "module",
     "version": "0.0.1",
     "scripts": {
+        "copy": "cp -r ../data .",
         "dev": "astro dev",
         "start": "astro dev",
+        "build:vercel" : "pnpm copy && pnpm build",
         "build": "astro build",
         "preview": "astro preview",
         "astro": "astro"
