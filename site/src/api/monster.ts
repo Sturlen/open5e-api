@@ -1,3 +1,4 @@
+import slugify from "slugify"
 import { z } from "zod"
 
 const SpeedSchema = z.record(z.union([z.number(), z.boolean(), z.string()]))
@@ -103,7 +104,7 @@ export const MonsterSchema = z
         return {
             ...rest,
             name,
-            slug: slug || name.toLowerCase().replaceAll(" ", "-"),
+            slug: slug || toSlug(name),
             stats: {
                 str: strength,
                 dex: dexterity,
@@ -118,3 +119,10 @@ export const MonsterSchema = z
 export type Stat = "str" | "dex" | "con" | "int" | "wis" | "chr"
 
 export type Monster = z.infer<typeof MonsterSchema>
+function toSlug(s: string) {
+    return slugify(s, {
+        lower: true,
+        strict: true,
+        trim: true,
+    })
+}
