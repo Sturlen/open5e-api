@@ -1,6 +1,5 @@
 # build output
 dist/
-data/
 public/*.json
 
 # generated types
