@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro"
 import { Monster, MonsterSchema } from "../api/monster"
 import Search from "../components/Search"
-const modules = [...(await Astro.glob("/cache/monsters.json"))] as [
+const modules = [...(await Astro.glob("/public/monsters.json"))] as [
     { default: any[] }
 ]
 
