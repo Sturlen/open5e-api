@@ -16,3 +16,6 @@ class TestAPIRoot:
 
     def test_magic_missile(self):
         self._verify(f"http://localhost:8000/spells/magic-missile/")
+
+    def test_monsters(self):
+        self._verify(f"http://localhost:8000/monsters/")
