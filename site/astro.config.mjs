@@ -9,5 +9,8 @@ export default defineConfig({
   adapter: vercel({
     analytics: true
   }),
-  integrations: [react()]
+  integrations: [react(), {
+    name: "Open5e",
+    hooks: {"astro:config:setup": () => console.log("poggers1")}
+  }]
 });

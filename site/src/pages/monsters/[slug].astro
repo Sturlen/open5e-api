@@ -10,7 +10,7 @@ interface Props {
 }
 
 export async function getStaticPaths() {
-    const modules = [...(await Astro.glob("/src/api/monsters.json"))] as [
+    const modules = [...(await Astro.glob("/data/**/monsters.json"))] as [
         { default: any[] }
     ]
 
@@ -28,7 +28,7 @@ export async function getStaticPaths() {
         }))
 }
 
-const { monster } = Astro.props
+const { monster }: { monster: Monster } = Astro.props
 
 const {
     challenge_rating,
@@ -38,6 +38,7 @@ const {
     img,
     slug,
     speed,
+    speed_json,
     subtype,
     armor_class,
     armor_desc,
@@ -94,10 +95,12 @@ const desc = `${monster.size ?? ""} ${monster.type ?? "monster"}${
             <strong>Speed</strong>
             <span
                 >{
-                    Object.keys(speed)
+                    Object.keys(speed_json)
                         .map(
                             (key) =>
-                                `${key === "walk" ? "" : key} ${speed[key]} ft.`
+                                `${key === "walk" ? "" : key} ${
+                                    speed_json[key]
+                                } ft.`
                         )
                         .join(", ")
                 }</span

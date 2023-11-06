@@ -2,13 +2,18 @@
 import Layout from "../layouts/Layout.astro"
 import { Monster, MonsterSchema } from "../api/monster"
 import Search from "../components/Search"
-const modules = [...(await Astro.glob("/src/api/monsters.json"))] as [
+const modules = [...(await Astro.glob("/data/**/monsters.json"))] as [
     { default: any[] }
 ]
 
-const MonsterData: Monster[] = modules[0].default.map((raw) =>
-    MonsterSchema.parse(raw)
-)
+const MonsterData: Monster[] = modules[0].default.map((raw) => {
+    const result = MonsterSchema.safeParse(raw)
+
+    if (!result.success) {
+        throw new Error(raw?.name + "\n" + result.error.message)
+    }
+    return result.data
+})
 ---
 
 <Layout title="Monsters">
