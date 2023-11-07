@@ -40,47 +40,59 @@ export const MonsterSchema = z
         senses: z.string(),
         languages: z.string().nullish(),
         challenge_rating: z.coerce.string(),
-        actions: z.string().or(
-            z.array(
-                z.object({
-                    name: z.string(),
-                    desc: z.string(),
-                    damage_dice: z.string().nullish(),
-                    attack_bonues: z.string().nullish(),
-                })
+        actions: z
+            .string()
+            .or(
+                z.array(
+                    z.object({
+                        name: z.string(),
+                        desc: z.string(),
+                        damage_dice: z.string().nullish(),
+                        attack_bonues: z.string().nullish(),
+                    })
+                )
             )
-        ).default([]),
-        reactions: z.string().or(
-            z.array(
-                z.object({
-                    name: z.string(),
-                    desc: z.string(),
-                    damage_dice: z.string().nullish(),
-                    attack_bonues: z.string().nullish(),
-                })
+            .default([]),
+        reactions: z
+            .string()
+            .or(
+                z.array(
+                    z.object({
+                        name: z.string(),
+                        desc: z.string(),
+                        damage_dice: z.string().nullish(),
+                        attack_bonues: z.string().nullish(),
+                    })
+                )
             )
-        ).nullish(),
+            .nullish(),
         legendary_desc: z.string().nullish(),
-        legendary_actions: z.string().or(
-            z.array(
-                z.object({
-                    name: z.string(),
-                    desc: z.string(),
-                    damage_dice: z.string().nullish(),
-                    attack_bonues: z.string().nullish(),
-                })
+        legendary_actions: z
+            .string()
+            .or(
+                z.array(
+                    z.object({
+                        name: z.string(),
+                        desc: z.string(),
+                        damage_dice: z.string().nullish(),
+                        attack_bonues: z.string().nullish(),
+                    })
+                )
             )
-        ).nullish(),
-        special_abilities: z.string().or(
-            z.array(
-                z.object({
-                    name: z.string(),
-                    desc: z.string(),
-                    damage_dice: z.string().nullish(),
-                    attack_bonues: z.string().nullish(),
-                })
+            .nullish(),
+        special_abilities: z
+            .string()
+            .or(
+                z.array(
+                    z.object({
+                        name: z.string(),
+                        desc: z.string(),
+                        damage_dice: z.string().nullish(),
+                        attack_bonues: z.string().nullish(),
+                    })
+                )
             )
-        ).nullish(),
+            .nullish(),
         spell_list: z.array(z.string()).nullish(),
         page_no: z.number().nullish(),
 
@@ -108,7 +120,7 @@ export const MonsterSchema = z
             ...rest,
             name,
             armor_class: armor_class || ac || 42,
-            slug: slug || toSlug(name),
+            slug: (slug || toSlug(name)).replaceAll(":", "-"),
             stats: {
                 str: strength,
                 dex: dexterity,

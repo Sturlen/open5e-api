@@ -1,19 +1,16 @@
 ---
 import Layout from "../layouts/Layout.astro"
-import { type Monster, MonsterSchema } from "../api/monster"
+import { type Monster } from "../api/monster"
 import Search from "../components/Search"
 const modules = [...(await Astro.glob("/public/monsters.json"))] as [
-    { default: any[] },
+    { default: Monster[] },
 ]
 
-const MonsterData: Monster[] = modules[0].default.map((raw) => {
-    const result = MonsterSchema.safeParse(raw)
+const MonsterData = modules[0].default
 
-    if (!result.success) {
-        throw new Error(raw?.name + "\n" + result.error.message)
-    }
-    return result.data
-})
+if (!Array.isArray(MonsterData)) {
+    throw new Error("Monster data is not an array")
+}
 ---
 
 <Layout title="Monsters">

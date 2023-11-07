@@ -1,6 +1,6 @@
 ---
 import { marked } from "marked"
-import { type Monster, type Stat, MonsterSchema } from "../../api/monster"
+import { type Monster, type Stat } from "../../api/monster"
 import Layout from "../../layouts/Layout.astro"
 import Stats from "../../components/Stats.astro"
 import DiceField from "../../components/DiceField"
@@ -11,28 +11,17 @@ interface Props {
 
 export async function getStaticPaths() {
     const modules = [...(await Astro.glob("/public/monsters.json"))] as [
-        { default: any[] },
+        { default: Monster[] },
     ]
 
-    return modules[0].default
-        .map((raw) => {
-            const result = MonsterSchema.safeParse(raw)
-
-            if (!result.success) {
-                throw new Error(raw?.name + "\n" + result.error.message)
-            }
-            return result.data
-        })
-        .map(
-            ({ slug, ...rest }): Monster => ({
-                slug: slug.replaceAll(":", "-"),
-                ...rest,
-            }),
-        ) //should do this in preprocessing
-        .map((monster) => ({
-            params: { slug: monster.slug },
-            props: { monster },
-        }))
+    return (
+        modules[0].default
+            //should do this in preprocessing
+            .map((monster) => ({
+                params: { slug: monster.slug },
+                props: { monster },
+            }))
+    )
 }
 
 const { monster }: { monster: Monster } = Astro.props
