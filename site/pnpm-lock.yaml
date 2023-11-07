@@ -14,9 +14,6 @@ dependencies:
   '@dice-roller/rpg-dice-roller':
     specifier: ^5.4.1
     version: 5.4.1
-  '@types/marked':
-    specifier: ^6.0.0
-    version: 6.0.0
   '@types/react':
     specifier: ^18.2.36
     version: 18.2.36
@@ -1041,13 +1038,6 @@ packages:
     resolution: {integrity: sha512-B5hZHgHsXvfCoO3xgNJvBnX7N8p86TqQeGKXcokW4XXi+qY4vxxPSFYofytvVmpFxzPv7oxDQzjg5Un5m2/xiw==}
     dependencies:
       '@types/unist': 3.0.1
-    dev: false
-
-  /@types/marked@6.0.0:
-    resolution: {integrity: sha512-jmjpa4BwUsmhxcfsgUit/7A9KbrC48Q0q8KvnY107ogcjGgTFDlIL3RpihNpx2Mu1hM4mdFQjoVc4O6JoGKHsA==}
-    deprecated: This is a stub types definition. marked provides its own type definitions, so you do not need this installed.
-    dependencies:
-      marked: 9.1.5
     dev: false
 
   /@types/mdast@3.0.14:
