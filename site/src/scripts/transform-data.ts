@@ -1,6 +1,6 @@
 import { readFileSync, readdirSync, writeFileSync } from "fs"
 import path from "path"
-import { MonsterSchema, type Monster } from "../api/monster"
+import { RawMonsterSchema, type Monster, MonsterSchema } from "../api/monster"
 import {
     DocumentSchema,
     type Document5e,
@@ -38,16 +38,26 @@ source_dirs.map((dirname: string) => {
     if (dir.includes("monsters.json")) {
         const mons = readJsonFile(
             path.join(data_path, dirname, "monsters.json"),
-            z.array(z.object({}))
-        ).map((mon) =>
-            MonsterSchema.parse({
-                ...mon,
-                document__license_url,
-                document__slug,
-                document__title,
-                document__url,
-            })
-        )
+            z.array(RawMonsterSchema)
+        ).map((mon) => {
+            try {
+                return MonsterSchema.parse({
+                    ...mon,
+                    document__license_url,
+                    document__slug,
+                    document__title,
+                    document__url,
+                })
+            } catch (e) {
+                if (e instanceof z.ZodError) {
+                    throw new Error(
+                        `Error parsing monster ${mon.name} ${e.message}`
+                    )
+                } else {
+                    throw e
+                }
+            }
+        })
         monsters.push(...mons)
     }
 })
