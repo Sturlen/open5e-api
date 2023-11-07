@@ -1,6 +1,6 @@
 ---
 import { marked } from "marked"
-import { type Monster, MonsterSchema, Stat } from "../../api/monster"
+import { type Monster, type Stat, MonsterSchema } from "../../api/monster"
 import Layout from "../../layouts/Layout.astro"
 import Stats from "../../components/Stats.astro"
 import DiceField from "../../components/DiceField"
@@ -11,7 +11,7 @@ interface Props {
 
 export async function getStaticPaths() {
     const modules = [...(await Astro.glob("/public/monsters.json"))] as [
-        { default: any[] }
+        { default: any[] },
     ]
 
     return modules[0].default
@@ -27,7 +27,7 @@ export async function getStaticPaths() {
             ({ slug, ...rest }): Monster => ({
                 slug: slug.replaceAll(":", "-"),
                 ...rest,
-            })
+            }),
         ) //should do this in preprocessing
         .map((monster) => ({
             params: { slug: monster.slug },
@@ -61,7 +61,7 @@ const desc = `${monster.size ?? ""} ${monster.type ?? "monster"}${
 
 <Layout title={monster.name} description={desc} image={img}>
     <main>
-        <h1>
+        <h1 view-transition-name={slug}>
             {name}
         </h1>
         <em>{desc}</em>
@@ -107,7 +107,7 @@ const desc = `${monster.size ?? ""} ${monster.type ?? "monster"}${
                             (key) =>
                                 `${key === "walk" ? "" : key} ${
                                     speed_json[key]
-                                } ft.`
+                                } ft.`,
                         )
                         .join(", ")
                 }</span
@@ -145,29 +145,20 @@ const desc = `${monster.size ?? ""} ${monster.type ?? "monster"}${
         </p>
 
         <h2>Actions</h2>
-
         {
-            typeof actions !== "string" &&
+            Array.isArray(actions) &&
                 actions.map((action) => (
                     <div>
-                        <h3>{action.name}.</h3>
-                        <span
-                            set:html={marked.parse(
-                                action.desc.replaceAll("\n", "\n\n"), // markdown require two newlines to split blocks.
-                                {
-                                    headerIds: false,
-                                    mangle: false,
-                                }
-                            )}
-                        />
+                        <h3>{action.name}</h3>
+                        {action.desc && <span set:html={marked(action.desc)} />}
                     </div>
                 ))
-            // should markdown viewer these
         }
+
         <hr />
         <Stats data={data} />
         <p>
-            Find the complete stats on: <a
+            Findd the complete stats on: <a
                 href={`https://open5e.com/monsters/${slug}`}
                 target="_blank">Open5e</a
             >

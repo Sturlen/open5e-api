@@ -1,9 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro"
-import { Monster, MonsterSchema } from "../api/monster"
+import { type Monster, MonsterSchema } from "../api/monster"
 import Search from "../components/Search"
 const modules = [...(await Astro.glob("/public/monsters.json"))] as [
-    { default: any[] }
+    { default: any[] },
 ]
 
 const MonsterData: Monster[] = modules[0].default.map((raw) => {

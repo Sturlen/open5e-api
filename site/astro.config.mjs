@@ -9,7 +9,7 @@ import path from 'path';
 export default defineConfig({
   output: "static",
   adapter: vercel({
-    analytics: true
+    webAnalytics: true
   }),
   integrations: [react(), {
     name: "Open5e",

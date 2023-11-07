@@ -77,7 +77,7 @@ export default function Search({ initialResults }: AppProps) {
                     <li key={hit.slug} className="card">
                         <span className="title">
                             <a href={`/monsters/${hit.slug}`}>
-                                <strong>{hit.name}</strong>
+                                <strong view-transition-name={hit.slug}>{hit.name}</strong>
                             </a>
 
                             <span className="source">{hit.document__slug}</span>

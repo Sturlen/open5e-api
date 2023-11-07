@@ -1,10 +1,10 @@
 ---
+import { ViewTransitions } from "astro:transitions"
 export interface Props {
     title: string
     description?: string
     image?: string | undefined
 }
-
 
 const {
     title,
@@ -12,13 +12,13 @@ const {
     image,
 } = Astro.props
 
-const params = new URLSearchParams({name: title}).toString()
+const params = new URLSearchParams({ name: title }).toString()
 
 const image_url = image || `/api/og?${params}`
 ---
 
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" transition:name="root">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
@@ -38,9 +38,10 @@ const image_url = image || `/api/og?${params}`
         <meta name="twitter:image" content={image_url} />
 
         <meta name="twitter:url" content={Astro.url} />
+        <ViewTransitions />
     </head>
     <body>
-        <header>
+        <header transition:name="header" transition:animate="none">
             <nav>
                 <a href="/">Open 5e Static Test - Home</a>
                 <span style="margin-right: auto;"></span>
@@ -53,145 +54,152 @@ const image_url = image || `/api/og?${params}`
         <footer>
             <a href="https://github.com/Sturlen/ope5e-static-site">Source</a>
         </footer>
+        <style is:global>
+            :root {
+                --accent: 135, 23, 23;
+                --accent-gradient: linear-gradient(
+                    45deg,
+                    rgb(var(--accent)),
+                    rgb(218, 98, 98) 30%,
+                    white 60%
+                );
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            nav {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                margin-inline: 50px;
+            }
+            h1 {
+                font-size: 3rem;
+                font-weight: 800;
+                margin: 0;
+                color: rgb(var(--accent));
+            }
+            main {
+                margin: auto;
+                padding: 1.5rem;
+                max-width: 80ch;
+            }
+
+            hr {
+                border-color: rgb(var(--accent));
+            }
+            html {
+                font-family: system-ui, sans-serif;
+                background-color: #f6f6f6;
+            }
+
+            p {
+                text-align: justify;
+                margin-top: 0.1rem;
+                margin-bottom: 0.2rem;
+            }
+
+            code {
+                font-family:
+                    Menlo,
+                    Monaco,
+                    Lucida Console,
+                    Liberation Mono,
+                    DejaVu Sans Mono,
+                    Bitstream Vera Sans Mono,
+                    Courier New,
+                    monospace;
+            }
+            header {
+                background-color: rgb(var(--accent));
+                padding-top: 0.5rem;
+                padding-left: 0.5rem;
+                padding-bottom: 0.5rem;
+            }
+            header a {
+                color: white;
+                font-size: 1.5rem;
+                text-decoration: none;
+                background-color: rgb(var(--accent));
+            }
+            .link-card-grid {
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+            }
+
+            .card {
+                margin: 0.1rem 0;
+                border: 1px solid rgba(var(--accent), 25%);
+                background-color: white;
+                padding: 1rem;
+                border-radius: 0.4rem;
+            }
+
+            .card .title {
+                display: flex;
+            }
+
+            .card .source {
+                display: inline-block;
+                margin-left: auto;
+                line-height: 20px;
+                height: 20px;
+                border-radius: 20px;
+                padding: 1px 10px;
+                padding-bottom: 3px;
+                background-color: rgb(var(--accent));
+                color: white;
+                text-transform: uppercase;
+                text-align: center;
+            }
+
+            li {
+                list-style-type: none;
+            }
+
+            footer {
+                margin-top: auto;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                font-weight: 600;
+            }
+
+            footer a {
+                text-decoration: none;
+                color: grey;
+                font-size: 1.5rem;
+            }
+            footer a:hover {
+                color: rgb(var(--accent));
+            }
+            .logo-box {
+                user-select: none;
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+            }
+            .algolia-logo {
+                margin-left: 0.2rem;
+                height: 1rem;
+            }
+            .dice-roller {
+            }
+            .search ol {
+                list-style-type: none;
+                padding-inline-start: 0;
+            }
+            .search input {
+                width: 100%;
+                padding: 10px;
+                font-size: 1rem;
+                box-sizing: border-box;
+                border-radius: 5px;
+            }
+        </style>
     </body>
 </html>
-<style is:global>
-    :root {
-        --accent: 135, 23, 23;
-        --accent-gradient: linear-gradient(
-            45deg,
-            rgb(var(--accent)),
-            rgb(218, 98, 98) 30%,
-            white 60%
-        );
-    }
-
-    body {
-        margin: 0;
-        padding: 0;
-    }
-    nav {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-        margin-inline: 50px;
-    }
-    h1 {
-        font-size: 3rem;
-        font-weight: 800;
-        margin: 0;
-        color: rgb(var(--accent));
-    }
-    main {
-        margin: auto;
-        padding: 1.5rem;
-        max-width: 80ch;
-    }
-
-    hr {
-        border-color: rgb(var(--accent));
-    }
-    html {
-        font-family: system-ui, sans-serif;
-        background-color: #f6f6f6;
-    }
-
-    p {
-        text-align: justify;
-        margin-top: 0.1rem;
-        margin-bottom: 0.2rem;
-    }
-
-    code {
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-    }
-    header {
-        background-color: rgb(var(--accent));
-        padding-top: 0.5rem;
-        padding-left: 0.5rem;
-        padding-bottom: 0.5rem;
-    }
-    header a {
-        color: white;
-        font-size: 1.5rem;
-        text-decoration: none;
-        background-color: rgb(var(--accent));
-    }
-    .link-card-grid {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-    }
-
-    .card {
-        margin: 0.1rem 0;
-        border: 1px solid rgba(var(--accent), 25%);
-        background-color: white;
-        padding: 1rem;
-        border-radius: 0.4rem;
-    }
-
-    .card .title {
-        display: flex;
-    }
-
-    .card .source {
-        display: inline-block;
-        margin-left: auto;
-        line-height: 20px;
-        height: 20px;
-        border-radius: 20px;
-        padding: 1px 10px;
-        padding-bottom: 3px;
-        background-color: rgb(var(--accent));
-        color: white;
-        text-transform: uppercase;
-        text-align: center;
-    }
-
-    li {
-        list-style-type: none;
-    }
-
-    footer {
-        margin-top: auto;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        font-weight: 600;
-    }
-
-    footer a {
-        text-decoration: none;
-        color: grey;
-        font-size: 1.5rem;
-    }
-    footer a:hover {
-        color: rgb(var(--accent));
-    }
-    .logo-box {
-        user-select: none;
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-end;
-    }
-    .algolia-logo {
-        margin-left: 0.2rem;
-        height: 1rem;
-    }
-    .dice-roller {
-    }
-    .search ol {
-        list-style-type: none;
-        padding-inline-start: 0;
-    }
-    .search input {
-        width: 100%;
-        padding: 10px;
-        font-size: 1rem;
-        box-sizing: border-box;
-        border-radius: 5px;
-    }
-</style>
