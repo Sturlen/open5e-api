@@ -24,7 +24,7 @@ def sort_results(data):
     for result in results:
         archetypes = result.get("archetypes")
         if archetypes:
-            archetypes.sort(key=lambda x: x["name"], reverse=False)
+            archetypes.sort(key=lambda x: x["slug"], reverse=False)
 
 class TestAPIRoot:
 
@@ -51,7 +51,7 @@ class TestAPIRoot:
 
     def test_classes(self):
         # This test is flaky, and fails on one machine, but passes on another.
-        self._verify("/classes")
+        self._verify("/classes", sort_results)
 
     def test_conditions(self):
         self._verify("/conditions")
