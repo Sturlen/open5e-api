@@ -18,6 +18,11 @@ def scrub_img_url(data):
         if mon.get("img_main"):
             mon["img_main"] = mon["img_main"].replace("\\", "/")
 
+def sort_results(data):
+    """img url is inconsistent across platforms. needs to fixed in the api at a later date."""
+    results: list[dict] = data["results"]
+    results.sort(key=lambda x: x["name"], reverse=False)
+
 class TestAPIRoot:
 
     def _verify(self, endpoint: str, transformer: Callable[[dict], None] = None):
@@ -43,7 +48,7 @@ class TestAPIRoot:
 
     def test_classes(self):
         # This test is flaky, and fails on one machine, but passes on another.
-        self._verify("/classes")
+        self._verify("/classes", sort_results)
 
     def test_conditions(self):
         self._verify("/conditions")
