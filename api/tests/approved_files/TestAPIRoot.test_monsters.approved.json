@@ -1,5 +1,5 @@
 {
-    "count": 2503,
+    "count": 2439,
     "next": "http://localhost:8000/monsters/?page=2",
     "previous": null,
     "results": [
@@ -1525,71 +1525,6 @@
             "subtype": "",
             "type": "Humanoid",
             "wisdom": 14,
-            "wisdom_save": null
-        },
-        {
-            "actions": [
-                {
-                    "desc": "The acolyte casts one of the following spells using WIS as the spellcasting ability (spell save DC 13). At will: light, thaumaturgy 3/day each: bless, cure wounds, sanctuary",
-                    "name": "Spellcasting"
-                }
-            ],
-            "alignment": "",
-            "armor_class": 10,
-            "armor_desc": "",
-            "bonus_actions": [
-                {
-                    "desc": "The bandit steals an object from one creature it can see within 5 feet of it. The target must succeed on a DC 11 DEX save or lose one object it is wearing or carrying of the bandit\u2019s choice. The object must weigh no more than 10 pounds, can\u2019t be a weapon, and can\u2019t be wrapped around or firmly attached to the target, such as a shirt or armor.",
-                    "name": "Steal Item"
-                }
-            ],
-            "challenge_rating": "1/4",
-            "charisma": 10,
-            "charisma_save": null,
-            "condition_immunities": "",
-            "constitution": 10,
-            "constitution_save": null,
-            "cr": 0.25,
-            "damage_immunities": "",
-            "damage_resistances": "",
-            "damage_vulnerabilities": "",
-            "desc": "",
-            "dexterity": 10,
-            "dexterity_save": null,
-            "document__license_url": "http://open5e.com/legal",
-            "document__slug": "blackflag",
-            "document__title": "TODO",
-            "document__url": "https://a5esrd.com/a5esrd",
-            "environments": [],
-            "group": null,
-            "hit_dice": "",
-            "hit_points": 15,
-            "img_main": null,
-            "intelligence": 10,
-            "intelligence_save": null,
-            "languages": "",
-            "legendary_actions": null,
-            "legendary_desc": "",
-            "name": "Acolyte",
-            "page_no": null,
-            "perception": null,
-            "reactions": [],
-            "senses": "",
-            "size": "Medium",
-            "skills": {
-                "stealth": 10
-            },
-            "slug": "acolyte-blackflag",
-            "special_abilities": null,
-            "speed": {
-                "walk": "30"
-            },
-            "spell_list": [],
-            "strength": 10,
-            "strength_save": null,
-            "subtype": "Any Lineage",
-            "type": "Humanoid",
-            "wisdom": 18,
             "wisdom_save": null
         },
         {
@@ -4773,68 +4708,6 @@
         {
             "actions": [
                 {
-                    "desc": "Each creature in that area must make a DC 21 DEX save, taking 63 (18d6) fire damage on a failed save, or half as much damage on a successful one.",
-                    "name": "60-foot cone"
-                }
-            ],
-            "alignment": "",
-            "armor_class": 19,
-            "armor_desc": "(natural armor)",
-            "bonus_actions": null,
-            "challenge_rating": "17",
-            "charisma": 24,
-            "charisma_save": null,
-            "condition_immunities": "",
-            "constitution": 12,
-            "constitution_save": null,
-            "cr": 17.0,
-            "damage_immunities": "fire",
-            "damage_resistances": "",
-            "damage_vulnerabilities": "",
-            "desc": "",
-            "dexterity": 22,
-            "dexterity_save": null,
-            "document__license_url": "http://open5e.com/legal",
-            "document__slug": "blackflag",
-            "document__title": "TODO",
-            "document__url": "https://a5esrd.com/a5esrd",
-            "environments": [],
-            "group": null,
-            "hit_dice": "",
-            "hit_points": 301,
-            "img_main": null,
-            "intelligence": 16,
-            "intelligence_save": null,
-            "languages": "",
-            "legendary_actions": null,
-            "legendary_desc": "",
-            "name": "Adult Red Dragon",
-            "page_no": null,
-            "perception": null,
-            "reactions": [],
-            "senses": "",
-            "size": "Huge",
-            "skills": {
-                "stealth": 16
-            },
-            "slug": "adult-red-dragon-blackflag",
-            "special_abilities": null,
-            "speed": {
-                "climb": "40",
-                "fly": "80",
-                "walk": "40"
-            },
-            "spell_list": [],
-            "strength": 26,
-            "strength_save": null,
-            "subtype": "",
-            "type": "Dragon",
-            "wisdom": 16,
-            "wisdom_save": null
-        },
-        {
-            "actions": [
-                {
                     "desc": "The rime worm makes two tendril attacks.",
                     "name": "Multiattack"
                 },
@@ -5400,6 +5273,258 @@
             "type": "Dragon",
             "wisdom": 14,
             "wisdom_save": 8
+        },
+        {
+            "actions": [
+                {
+                    "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
+                    "name": "Multiattack"
+                },
+                {
+                    "attack_bonus": 13,
+                    "damage_bonus": 8,
+                    "damage_dice": "2d10",
+                    "desc": "Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 19 (2d10 + 8) piercing damage.",
+                    "name": "Bite"
+                },
+                {
+                    "attack_bonus": 13,
+                    "damage_bonus": 8,
+                    "damage_dice": "2d6",
+                    "desc": "Melee Weapon Attack: +13 to hit, reach 5 ft., one target. Hit: 15 (2d6 + 8) slashing damage.",
+                    "name": "Claw"
+                },
+                {
+                    "attack_bonus": 13,
+                    "damage_bonus": 8,
+                    "damage_dice": "2d8",
+                    "desc": "Melee Weapon Attack: +13 to hit, reach 15 ft., one target. Hit: 17 (2d8 + 8) bludgeoning damage.",
+                    "name": "Tail"
+                },
+                {
+                    "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 18 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
+                    "name": "Frightful Presence"
+                },
+                {
+                    "attack_bonus": 0,
+                    "damage_dice": "13d8",
+                    "desc": "The dragon uses one of the following breath weapons.\n**Cold Breath.** The dragon exhales an icy blast in a 60-foot cone. Each creature in that area must make a DC 20 Constitution saving throw, taking 58 (13d8) cold damage on a failed save, or half as much damage on a successful one.\n**Paralyzing Breath.** The dragon exhales paralyzing gas in a 60-foot cone. Each creature in that area must succeed on a DC 20 Constitution saving throw or be paralyzed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+                    "name": "Breath Weapons (Recharge 5-6)"
+                },
+                {
+                    "desc": "The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).\nIn a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
+                    "name": "Change Shape"
+                }
+            ],
+            "alignment": "lawful good",
+            "armor_class": 19,
+            "armor_desc": "natural armor",
+            "bonus_actions": null,
+            "challenge_rating": "16",
+            "charisma": 21,
+            "charisma_save": 10,
+            "condition_immunities": "",
+            "constitution": 25,
+            "constitution_save": 12,
+            "cr": 16.0,
+            "damage_immunities": "cold",
+            "damage_resistances": "",
+            "damage_vulnerabilities": "",
+            "desc": "",
+            "dexterity": 10,
+            "dexterity_save": 5,
+            "document__license_url": "http://open5e.com/legal",
+            "document__slug": "wotc-srd",
+            "document__title": "5e Core Rules",
+            "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd",
+            "environments": [
+                "Urban",
+                "Feywild",
+                "Mountains",
+                "Mountain"
+            ],
+            "group": "Silver Dragon",
+            "hit_dice": "18d12+126",
+            "hit_points": 243,
+            "img_main": null,
+            "intelligence": 16,
+            "intelligence_save": null,
+            "languages": "Common, Draconic",
+            "legendary_actions": [
+                {
+                    "desc": "The dragon makes a Wisdom (Perception) check.",
+                    "name": "Detect"
+                },
+                {
+                    "desc": "The dragon makes a tail attack.",
+                    "name": "Tail Attack"
+                },
+                {
+                    "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+                    "name": "Wing Attack (Costs 2 Actions)"
+                }
+            ],
+            "legendary_desc": "The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.",
+            "name": "Adult Silver Dragon",
+            "page_no": 302,
+            "perception": 11,
+            "reactions": null,
+            "senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 21",
+            "size": "Huge",
+            "skills": {
+                "arcana": 8,
+                "history": 8,
+                "perception": 11,
+                "stealth": 5
+            },
+            "slug": "adult-silver-dragon",
+            "special_abilities": [
+                {
+                    "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+                    "name": "Legendary Resistance (3/Day)"
+                }
+            ],
+            "speed": {
+                "fly": 80,
+                "walk": 40
+            },
+            "spell_list": [],
+            "strength": 27,
+            "strength_save": null,
+            "subtype": "",
+            "type": "Dragon",
+            "wisdom": 13,
+            "wisdom_save": 6
+        },
+        {
+            "actions": [
+                {
+                    "desc": "The dragon attacks with its bite and twice with its claws. In place of its bite  it can use Spit Frost.",
+                    "name": "Multiattack"
+                },
+                {
+                    "desc": "Melee Weapon Attack: +13 to hit  reach 10 ft.  one target. Hit: 23 (3d10 + 7) piercing damage plus 4 (1d8) cold damage.",
+                    "name": "Bite"
+                },
+                {
+                    "desc": "Melee Weapon Attack: +13 to hit  reach 5 ft.  one target. Hit: 20 (3d8 + 7) slashing damage.",
+                    "name": "Claws"
+                },
+                {
+                    "desc": "Melee Weapon Attack: +13 to hit  reach 15 ft.  one target. Hit: 16 (2d8 + 7) bludgeoning damage  and the dragon pushes the target 10 feet away.",
+                    "name": "Tail"
+                },
+                {
+                    "desc": "Melee Weapon Attack: +13 to hit  reach 5 ft.  one target. Hit: 11 (1d8 + 7) piercing damage.",
+                    "name": "Rapier (Humanoid Form Only)"
+                },
+                {
+                    "desc": "The creature targets one creature within 60 feet  forcing it to make a DC 21 Constitution saving throw. The creature takes 16 (3d10) cold damage on a failure or half damage on a success. On a failure  the creatures Speed is also halved until the end of its next turn. Flying creatures immediately fall unless they are magically kept aloft.",
+                    "name": "Spit Frost"
+                },
+                {
+                    "desc": "The dragon uses one of the following breath weapons:",
+                    "name": "Breath Weapons (Recharge 5-6)"
+                },
+                {
+                    "desc": "The dragon exhales freezing wind in a 60-foot cone. Each creature in the area makes a DC 21 Constitution saving throw  taking 72 (16d8) cold damage on a failed save or half damage on a success. On a failure  the creature is also slowed until the end of its next turn.",
+                    "name": "Frost Breath"
+                },
+                {
+                    "desc": "The dragon exhales paralytic gas in a 60-foot cone. Each creature in the area must succeed on a DC 20 Constitution saving throw or be paralyzed until the end of its next turn.",
+                    "name": "Paralyzing Breath"
+                },
+                {
+                    "desc": "The dragon magically takes the shape of a humanoid or beast  or changes back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (dragons choice). In the new form  the dragons stats are unchanged except for its size. It can't use Spit Frost  Breath Weapons  Tail Attack  or Wing Attack except in dragon form. In beast form  it can attack only with its bite and claws  if appropriate to its form. If the beast form is Large or smaller  the reach of these attacks is reduced to 5 feet. In humanoid form  it can attack only with its rapier.",
+                    "name": "Change Shape"
+                }
+            ],
+            "alignment": "",
+            "armor_class": 19,
+            "armor_desc": "",
+            "bonus_actions": null,
+            "challenge_rating": "19",
+            "charisma": 20,
+            "charisma_save": 11,
+            "condition_immunities": "",
+            "constitution": 24,
+            "constitution_save": 13,
+            "cr": 19.0,
+            "damage_immunities": "cold",
+            "damage_resistances": "",
+            "damage_vulnerabilities": "",
+            "desc": "",
+            "dexterity": 14,
+            "dexterity_save": 8,
+            "document__license_url": "http://open5e.com/legal",
+            "document__slug": "menagerie",
+            "document__title": "Level Up Advanced 5e Monstrous Menagerie",
+            "document__url": "https://www.levelup5e.com",
+            "environments": [],
+            "group": null,
+            "hit_dice": "21d12+147",
+            "hit_points": 283,
+            "img_main": null,
+            "intelligence": 16,
+            "intelligence_save": null,
+            "languages": "Common, Draconic, one more",
+            "legendary_actions": [
+                {
+                    "desc": "Only one legendary action can be used at a time and only at the end of another creatures turn. It regains spent legendary actions at the start of its turn.",
+                    "name": "The dragon can take 3 legendary actions"
+                },
+                {
+                    "desc": "Each creature of the dragons choice within 120 feet that can hear it makes a DC 19 Charisma saving throw. On a failure, it is frightened for 1 minute. A creature repeats the saving throw at the end of its turns, ending the effect on itself on a success. When it succeeds on a saving throw or the effect ends for it, it is immune to Roar for 24 hours.",
+                    "name": "Roar"
+                },
+                {
+                    "desc": "The dragon beats its wings. Each creature within 15 feet makes a DC 21 Dexterity saving throw. On a failure, it is pushed 10 feet away and knocked prone. The dragon can then fly up to half its fly speed.",
+                    "name": "Wing Attack"
+                },
+                {
+                    "desc": "Pounding winds surround the dragon in a 20-foot radius. A creature in this area attempting to move closer to the dragon must spend 2 feet of movement for every 1 foot closer it moves, and ranged attacks against the dragon are made with disadvantage. A creature that starts its turn in the windstorm makes a DC 20 Constitution saving throw, taking 5 (1d10) cold damage on a failure. The windstorm lasts until the start of the dragons next turn.",
+                    "name": "Windstorm (Costs 2 Actions)"
+                }
+            ],
+            "legendary_desc": "",
+            "name": "Adult Silver Dragon",
+            "page_no": 178,
+            "perception": null,
+            "reactions": [
+                {
+                    "desc": "When a creature the dragon can see within 10 feet hits the dragon with a melee attack, the dragon makes a tail attack against it.",
+                    "name": "Tail Attack"
+                }
+            ],
+            "senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 20",
+            "size": "Huge",
+            "skills": {},
+            "slug": "adult-silver-dragon-a5e",
+            "special_abilities": [
+                {
+                    "desc": "The dragon suffers no harmful effects from high altitudes. When flying at high altitude, the dragon can, after 1 minute of concentration, discorporate into clouds. In this form, it has advantage on Stealth checks, its fly speed increases to 300 feet, it is immune to all nonmagical damage, it has resistance to magical damage, and it can't take any actions except Hide. If it takes damage or descends more than 500 feet from where it transformed, it immediately returns to its corporeal form. It can revert to its true form as an action.",
+                    "name": "Cloud Strider"
+                },
+                {
+                    "desc": "When the dragon fails a saving throw, it can choose to succeed instead. When it does, some of its scales dissipate into clouds. If it has no more uses of this ability, its Armor Class is reduced to 17 until it finishes a long rest.",
+                    "name": "Legendary Resistance (3/Day)"
+                },
+                {
+                    "desc": "The dragons spellcasting ability is Charisma (save DC 19). It can innately cast the following spells, requiring no material components. 3/day each:charm person, faerie fire,awaken, geas",
+                    "name": "Innate Spellcasting"
+                }
+            ],
+            "speed": {
+                "fly": 80,
+                "walk": 40
+            },
+            "spell_list": [],
+            "strength": 24,
+            "strength_save": null,
+            "subtype": "",
+            "type": "Dragon",
+            "wisdom": 12,
+            "wisdom_save": 7
         }
     ]
 }

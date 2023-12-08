@@ -169,11 +169,11 @@
             "slug": "accelerate",
             "spell_level": 3,
             "spell_lists": [
-                "cleric",
-                "druid",
                 "bard",
                 "sorcerer",
-                "wizard"
+                "wizard",
+                "cleric",
+                "druid"
             ],
             "target_range_sort": 1
         },
@@ -239,8 +239,8 @@
             "slug": "acid-arrow",
             "spell_level": 2,
             "spell_lists": [
-                "druid",
-                "wizard"
+                "wizard",
+                "druid"
             ],
             "target_range_sort": 90
         },
@@ -409,10 +409,10 @@
             "slug": "adjust-position",
             "spell_level": 1,
             "spell_lists": [
-                "cleric",
                 "bard",
                 "warlock",
-                "wizard"
+                "wizard",
+                "cleric"
             ],
             "target_range_sort": 30
         },
@@ -446,9 +446,9 @@
             "slug": "afflict-line",
             "spell_level": 9,
             "spell_lists": [
-                "cleric",
                 "warlock",
-                "wizard"
+                "wizard",
+                "cleric"
             ],
             "target_range_sort": 5280
         },
@@ -482,12 +482,12 @@
             "slug": "agonizing-mark",
             "spell_level": 1,
             "spell_lists": [
-                "cleric",
-                "druid",
-                "ranger",
                 "bard",
                 "sorcerer",
-                "wizard"
+                "wizard",
+                "cleric",
+                "druid",
+                "ranger"
             ],
             "target_range_sort": 90
         },
@@ -651,8 +651,8 @@
             "slug": "alarm",
             "spell_level": 1,
             "spell_lists": [
-                "ranger",
-                "wizard"
+                "wizard",
+                "ranger"
             ],
             "target_range_sort": 30
         },
@@ -718,9 +718,9 @@
             "slug": "ale-dritch-blast",
             "spell_level": 0,
             "spell_lists": [
-                "druid",
                 "bard",
-                "wizard"
+                "wizard",
+                "druid"
             ],
             "target_range_sort": 60
         },
@@ -754,10 +754,10 @@
             "slug": "ally-aegis",
             "spell_level": 6,
             "spell_lists": [
-                "cleric",
                 "bard",
                 "sorcerer",
-                "wizard"
+                "wizard",
+                "cleric"
             ],
             "target_range_sort": 60
         },
@@ -791,10 +791,10 @@
             "slug": "alone",
             "spell_level": 3,
             "spell_lists": [
-                "cleric",
                 "sorcerer",
                 "warlock",
-                "wizard"
+                "wizard",
+                "cleric"
             ],
             "target_range_sort": 30
         },
@@ -828,12 +828,12 @@
             "slug": "alter-arrows-fortune",
             "spell_level": 1,
             "spell_lists": [
-                "cleric",
-                "druid",
-                "ranger",
                 "bard",
                 "sorcerer",
-                "wizard"
+                "wizard",
+                "cleric",
+                "druid",
+                "ranger"
             ],
             "target_range_sort": 100
         },
@@ -1001,9 +1001,9 @@
             "slug": "ambush",
             "spell_level": 1,
             "spell_lists": [
+                "wizard",
                 "druid",
-                "ranger",
-                "wizard"
+                "ranger"
             ],
             "target_range_sort": 0
         },
@@ -1105,9 +1105,9 @@
             "slug": "amplify-ley-field",
             "spell_level": 5,
             "spell_lists": [
-                "druid",
                 "warlock",
-                "wizard"
+                "wizard",
+                "druid"
             ],
             "target_range_sort": 0
         },
@@ -1212,9 +1212,9 @@
             "slug": "anchoring-rope",
             "spell_level": 1,
             "spell_lists": [
+                "bard",
                 "druid",
-                "ranger",
-                "bard"
+                "ranger"
             ],
             "target_range_sort": 30
         },
@@ -1248,8 +1248,8 @@
             "slug": "ancient-shade",
             "spell_level": 5,
             "spell_lists": [
-                "cleric",
-                "wizard"
+                "wizard",
+                "cleric"
             ],
             "target_range_sort": 10
         },
@@ -1315,9 +1315,9 @@
             "slug": "angelic-guardian",
             "spell_level": 1,
             "spell_lists": [
-                "cleric",
                 "warlock",
-                "wizard"
+                "wizard",
+                "cleric"
             ],
             "target_range_sort": 30
         },
@@ -1383,9 +1383,9 @@
             "slug": "animal-friendship",
             "spell_level": 1,
             "spell_lists": [
+                "bard",
                 "druid",
-                "ranger",
-                "bard"
+                "ranger"
             ],
             "target_range_sort": 30
         },
@@ -1451,9 +1451,9 @@
             "slug": "animal-messenger",
             "spell_level": 2,
             "spell_lists": [
+                "bard",
                 "druid",
-                "ranger",
-                "bard"
+                "ranger"
             ],
             "target_range_sort": 30
         },
@@ -1619,8 +1619,8 @@
             "slug": "animate-dead",
             "spell_level": 3,
             "spell_lists": [
-                "cleric",
-                "wizard"
+                "wizard",
+                "cleric"
             ],
             "target_range_sort": 10
         },
@@ -1654,9 +1654,9 @@
             "slug": "animate-ghoul",
             "spell_level": 2,
             "spell_lists": [
-                "cleric",
                 "sorcerer",
-                "wizard"
+                "wizard",
+                "cleric"
             ],
             "target_range_sort": 1
         },
@@ -1690,8 +1690,8 @@
             "slug": "animate-greater-undead",
             "spell_level": 6,
             "spell_lists": [
-                "cleric",
-                "wizard"
+                "wizard",
+                "cleric"
             ],
             "target_range_sort": 15
         },
