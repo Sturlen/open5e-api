@@ -18,13 +18,19 @@ def scrub_img_url(data):
         if mon.get("img_main"):
             mon["img_main"] = mon["img_main"].replace("\\", "/")
 
-def sort_results(data):
+def sort_archetypes(data):
     """img url is inconsistent across platforms. needs to fixed in the api at a later date."""
     results: list[dict] = data["results"]
     for result in results:
         archetypes = result.get("archetypes")
         if archetypes:
             archetypes.sort(key=lambda x: x["slug"], reverse=False)
+
+def sort_results(data):
+    """img url is inconsistent across platforms. needs to fixed in the api at a later date."""
+    results: list[dict] = data["results"]
+    data["results"] = sorted(results, key=lambda x: x["slug"], reverse=False)
+
 
 class TestAPIRoot:
 
@@ -51,7 +57,7 @@ class TestAPIRoot:
 
     def test_classes(self):
         # This test is flaky, and fails on one machine, but passes on another.
-        self._verify("/classes", sort_results)
+        self._verify("/classes", sort_archetypes)
 
     def test_conditions(self):
         self._verify("/conditions")
@@ -89,7 +95,7 @@ class TestAPIRoot:
 
     def test_spells(self):
         # This test is flaky, and fails on one machine, but passes on another.
-        self._verify("/spells")
+        self._verify("/spells", sort_results)
 
     def test_weapons(self):
         self._verify("/weapons")
