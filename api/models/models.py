@@ -99,6 +99,7 @@ class GameContent(models.Model):
 
     class Meta:
         abstract = True
+        ordering = ['slug']
 
     @staticmethod
     def plural_str() -> str:

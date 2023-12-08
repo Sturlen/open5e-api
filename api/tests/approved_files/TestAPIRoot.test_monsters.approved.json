@@ -1434,12 +1434,12 @@
                 "walk": 30
             },
             "spell_list": [
-                "http://localhost:8000/v1/spells/light/",
-                "http://localhost:8000/v1/spells/sacred-flame/",
-                "http://localhost:8000/v1/spells/thaumaturgy/",
                 "http://localhost:8000/v1/spells/bless/",
                 "http://localhost:8000/v1/spells/cure-wounds/",
-                "http://localhost:8000/v1/spells/sanctuary/"
+                "http://localhost:8000/v1/spells/light/",
+                "http://localhost:8000/v1/spells/sacred-flame/",
+                "http://localhost:8000/v1/spells/sanctuary/",
+                "http://localhost:8000/v1/spells/thaumaturgy/"
             ],
             "strength": 10,
             "strength_save": null,

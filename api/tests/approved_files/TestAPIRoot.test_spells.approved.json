@@ -170,10 +170,10 @@
             "spell_level": 3,
             "spell_lists": [
                 "bard",
-                "sorcerer",
-                "wizard",
                 "cleric",
-                "druid"
+                "druid",
+                "sorcerer",
+                "wizard"
             ],
             "target_range_sort": 1
         },
@@ -239,8 +239,8 @@
             "slug": "acid-arrow",
             "spell_level": 2,
             "spell_lists": [
-                "wizard",
-                "druid"
+                "druid",
+                "wizard"
             ],
             "target_range_sort": 90
         },
@@ -410,9 +410,9 @@
             "spell_level": 1,
             "spell_lists": [
                 "bard",
+                "cleric",
                 "warlock",
-                "wizard",
-                "cleric"
+                "wizard"
             ],
             "target_range_sort": 30
         },
@@ -446,9 +446,9 @@
             "slug": "afflict-line",
             "spell_level": 9,
             "spell_lists": [
+                "cleric",
                 "warlock",
-                "wizard",
-                "cleric"
+                "wizard"
             ],
             "target_range_sort": 5280
         },
@@ -483,11 +483,11 @@
             "spell_level": 1,
             "spell_lists": [
                 "bard",
-                "sorcerer",
-                "wizard",
                 "cleric",
                 "druid",
-                "ranger"
+                "ranger",
+                "sorcerer",
+                "wizard"
             ],
             "target_range_sort": 90
         },
@@ -651,8 +651,8 @@
             "slug": "alarm",
             "spell_level": 1,
             "spell_lists": [
-                "wizard",
-                "ranger"
+                "ranger",
+                "wizard"
             ],
             "target_range_sort": 30
         },
@@ -719,8 +719,8 @@
             "spell_level": 0,
             "spell_lists": [
                 "bard",
-                "wizard",
-                "druid"
+                "druid",
+                "wizard"
             ],
             "target_range_sort": 60
         },
@@ -755,9 +755,9 @@
             "spell_level": 6,
             "spell_lists": [
                 "bard",
+                "cleric",
                 "sorcerer",
-                "wizard",
-                "cleric"
+                "wizard"
             ],
             "target_range_sort": 60
         },
@@ -791,10 +791,10 @@
             "slug": "alone",
             "spell_level": 3,
             "spell_lists": [
+                "cleric",
                 "sorcerer",
                 "warlock",
-                "wizard",
-                "cleric"
+                "wizard"
             ],
             "target_range_sort": 30
         },
@@ -829,11 +829,11 @@
             "spell_level": 1,
             "spell_lists": [
                 "bard",
-                "sorcerer",
-                "wizard",
                 "cleric",
                 "druid",
-                "ranger"
+                "ranger",
+                "sorcerer",
+                "wizard"
             ],
             "target_range_sort": 100
         },
@@ -1001,9 +1001,9 @@
             "slug": "ambush",
             "spell_level": 1,
             "spell_lists": [
-                "wizard",
                 "druid",
-                "ranger"
+                "ranger",
+                "wizard"
             ],
             "target_range_sort": 0
         },
@@ -1105,9 +1105,9 @@
             "slug": "amplify-ley-field",
             "spell_level": 5,
             "spell_lists": [
+                "druid",
                 "warlock",
-                "wizard",
-                "druid"
+                "wizard"
             ],
             "target_range_sort": 0
         },
@@ -1248,8 +1248,8 @@
             "slug": "ancient-shade",
             "spell_level": 5,
             "spell_lists": [
-                "wizard",
-                "cleric"
+                "cleric",
+                "wizard"
             ],
             "target_range_sort": 10
         },
@@ -1315,9 +1315,9 @@
             "slug": "angelic-guardian",
             "spell_level": 1,
             "spell_lists": [
+                "cleric",
                 "warlock",
-                "wizard",
-                "cleric"
+                "wizard"
             ],
             "target_range_sort": 30
         },
@@ -1619,8 +1619,8 @@
             "slug": "animate-dead",
             "spell_level": 3,
             "spell_lists": [
-                "wizard",
-                "cleric"
+                "cleric",
+                "wizard"
             ],
             "target_range_sort": 10
         },
@@ -1654,9 +1654,9 @@
             "slug": "animate-ghoul",
             "spell_level": 2,
             "spell_lists": [
+                "cleric",
                 "sorcerer",
-                "wizard",
-                "cleric"
+                "wizard"
             ],
             "target_range_sort": 1
         },
@@ -1690,8 +1690,8 @@
             "slug": "animate-greater-undead",
             "spell_level": 6,
             "spell_lists": [
-                "wizard",
-                "cleric"
+                "cleric",
+                "wizard"
             ],
             "target_range_sort": 15
         },
