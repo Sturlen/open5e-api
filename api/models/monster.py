@@ -9,6 +9,20 @@ from .spell import Spell
 
 class Monster(GameContent):
     size = models.TextField(help_text='Monster size category.')
+
+    @property
+    def size_sort(self):
+        """Return an integer representing the size of the monster. -1 is unknown size."""
+        size_index = {
+            "tiny": 0,
+            "small": 1,
+            "medium": 2,
+            "large": 3,
+            "huge": 4,
+            "gargantuan": 5
+        }
+        return size_index.get(self.size.lower(), -1)
+
     type = models.TextField(
         help_text='The type of the monster, such as "aberration"')
     subtype = models.TextField(
